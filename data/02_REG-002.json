@@ -1,0 +1,736 @@
+{
+  "metadata": {
+    "source_number": 2,
+    "source_id": "REG-002",
+    "title": "Approved AI Tools, Models & Deployments Register",
+    "version": "3.0",
+    "effective_from": "2026-10-01",
+    "effective_to": null,
+    "status": "published",
+    "owner": "Technology & Security",
+    "approving_authority": "Northstar AI Governance Council",
+    "authority": "Authoritative catalog snapshot",
+    "access_scope": [
+      "northstar_employees"
+    ],
+    "language": "en",
+    "synthetic": true,
+    "snapshot_at": "2026-11-08T00:00:00Z",
+    "sections": [
+      {
+        "section_id": "S01",
+        "title": "Permission intersection",
+        "text": "Check tool, model version, deployment, purpose, data classes, user population and case conditions together. All must permit the activity. Model approval alone never approves an endpoint. No approved deployment permits raw personal data or Restricted information."
+      },
+      {
+        "section_id": "S02",
+        "title": "Status semantics",
+        "text": "Approved means only the recorded scope. Pilot only means named pilot participants and pilot purposes, not production. Under review, Blocked, Revoked and unlisted combinations do not permit company use. Expired case authorization cannot be rescued by an Approved catalog status."
+      },
+      {
+        "section_id": "S03",
+        "title": "Configuration and freshness",
+        "text": "Snapshot is 2026-11-08T00:00:00Z. Owner-approved changes produce a new catalog version. Preserve historical snapshots for decisions. All names, providers, settings and .example endpoints in this catalog are fictional; they do not describe real vendor behavior."
+      }
+    ]
+  },
+  "tools": [
+    {
+      "tool_id": "TOL-001",
+      "name": "Northstar Assist",
+      "status": "Approved",
+      "purpose": "drafting and summarization",
+      "deployment_ids": [
+        "DEP-001"
+      ],
+      "owner": "Employee Enablement",
+      "account_requirement": "Company identity only",
+      "citation_id": "REG-002@3.0:TOL-001"
+    },
+    {
+      "tool_id": "TOL-002",
+      "name": "CodeForge",
+      "status": "Approved",
+      "purpose": "nonsensitive code assistance",
+      "deployment_ids": [
+        "DEP-002"
+      ],
+      "owner": "Technology & Security",
+      "account_requirement": "Company identity only",
+      "citation_id": "REG-002@3.0:TOL-002"
+    },
+    {
+      "tool_id": "TOL-003",
+      "name": "ContractLens",
+      "status": "Approved",
+      "purpose": "contract summarization",
+      "deployment_ids": [
+        "DEP-003"
+      ],
+      "owner": "Technology & Security",
+      "account_requirement": "Company identity only",
+      "citation_id": "REG-002@3.0:TOL-003"
+    },
+    {
+      "tool_id": "TOL-004",
+      "name": "InsightDesk",
+      "status": "Approved",
+      "purpose": "aggregate analysis",
+      "deployment_ids": [
+        "DEP-004"
+      ],
+      "owner": "Technology & Security",
+      "account_requirement": "Company identity only",
+      "citation_id": "REG-002@3.0:TOL-004"
+    },
+    {
+      "tool_id": "TOL-005",
+      "name": "MeetBrief",
+      "status": "Pilot only",
+      "purpose": "sanitized meeting summaries",
+      "deployment_ids": [
+        "DEP-005"
+      ],
+      "owner": "Employee Enablement",
+      "account_requirement": "Company identity only",
+      "citation_id": "REG-002@3.0:TOL-005"
+    },
+    {
+      "tool_id": "TOL-006",
+      "name": "ResearchHub",
+      "status": "Approved",
+      "purpose": "Public research",
+      "deployment_ids": [
+        "DEP-006"
+      ],
+      "owner": "Technology & Security",
+      "account_requirement": "Company identity only",
+      "citation_id": "REG-002@3.0:TOL-006"
+    },
+    {
+      "tool_id": "TOL-007",
+      "name": "QuickChat",
+      "status": "Blocked",
+      "purpose": "none",
+      "deployment_ids": [
+        "DEP-007"
+      ],
+      "owner": "Technology & Security",
+      "account_requirement": "Company identity only",
+      "citation_id": "REG-002@3.0:TOL-007"
+    },
+    {
+      "tool_id": "TOL-008",
+      "name": "VisionLab",
+      "status": "Under review",
+      "purpose": "proposed inventory-image analysis",
+      "deployment_ids": [
+        "DEP-008"
+      ],
+      "owner": "Technology & Security",
+      "account_requirement": "Company identity only",
+      "citation_id": "REG-002@3.0:TOL-008"
+    },
+    {
+      "tool_id": "TOL-009",
+      "name": "SupportPilot",
+      "status": "Approved",
+      "purpose": "scoped custom support applications",
+      "deployment_ids": [
+        "DEP-009",
+        "DEP-012"
+      ],
+      "owner": "Technology & Security",
+      "account_requirement": "Company identity only",
+      "citation_id": "REG-002@3.0:TOL-009"
+    },
+    {
+      "tool_id": "TOL-010",
+      "name": "PolicyDesk",
+      "status": "Approved",
+      "purpose": "scoped internal knowledge applications",
+      "deployment_ids": [
+        "DEP-010",
+        "DEP-011",
+        "DEP-013"
+      ],
+      "owner": "Technology & Security",
+      "account_requirement": "Company identity only",
+      "citation_id": "REG-002@3.0:TOL-010"
+    }
+  ],
+  "models": [
+    {
+      "model_id": "MOD-001",
+      "model_version": "2.1",
+      "model_version_id": "MOD-001@2.1",
+      "name": "Atlas Text",
+      "role": "generation",
+      "status": "Approved",
+      "approved_purposes": [
+        "drafting",
+        "summarization",
+        "aggregate analysis",
+        "grounded support answers"
+      ],
+      "limitations": "Text outputs require human oversight; no autonomous consequential decisions.",
+      "provider": "Northstar Synthetic Model Services",
+      "owner": "AI Platform",
+      "effective_from": "2026-10-01",
+      "review_due": "2027-01-01",
+      "citation_id": "REG-002@3.0:MOD-001@2.1"
+    },
+    {
+      "model_id": "MOD-002",
+      "model_version": "1.4",
+      "model_version_id": "MOD-002@1.4",
+      "name": "Forge Code",
+      "role": "generation",
+      "status": "Approved",
+      "approved_purposes": [
+        "code assistance"
+      ],
+      "limitations": "Nonsensitive company code only; normal testing and code review required.",
+      "provider": "Northstar Synthetic Model Services",
+      "owner": "AI Platform",
+      "effective_from": "2026-10-01",
+      "review_due": "2027-01-01",
+      "citation_id": "REG-002@3.0:MOD-002@1.4"
+    },
+    {
+      "model_id": "MOD-003",
+      "model_version": "1.2",
+      "model_version_id": "MOD-003@1.2",
+      "name": "Lex Text",
+      "role": "generation",
+      "status": "Approved",
+      "approved_purposes": [
+        "contract summarization"
+      ],
+      "limitations": "Legal validates interpretations; no personal data.",
+      "provider": "Northstar Synthetic Model Services",
+      "owner": "AI Platform",
+      "effective_from": "2026-10-01",
+      "review_due": "2027-01-01",
+      "citation_id": "REG-002@3.0:MOD-003@1.2"
+    },
+    {
+      "model_id": "MOD-004",
+      "model_version": "1.0",
+      "model_version_id": "MOD-004@1.0",
+      "name": "Vector Pine",
+      "role": "embedding",
+      "status": "Approved",
+      "approved_purposes": [
+        "Public/Internal retrieval"
+      ],
+      "limitations": "Indexes inherit source ACL and classification.",
+      "provider": "Northstar Synthetic Model Services",
+      "owner": "AI Platform",
+      "effective_from": "2026-10-01",
+      "review_due": "2027-01-01",
+      "citation_id": "REG-002@3.0:MOD-004@1.0"
+    },
+    {
+      "model_id": "MOD-005",
+      "model_version": "1.0",
+      "model_version_id": "MOD-005@1.0",
+      "name": "Rank Cedar",
+      "role": "reranking",
+      "status": "Pilot only",
+      "approved_purposes": [
+        "Public/Internal retrieval pilot"
+      ],
+      "limitations": "Named pilot only; not approved for customer-facing production.",
+      "provider": "Northstar Synthetic Model Services",
+      "owner": "AI Platform",
+      "effective_from": "2026-10-01",
+      "review_due": "2027-01-01",
+      "citation_id": "REG-002@3.0:MOD-005@1.0"
+    },
+    {
+      "model_id": "MOD-006",
+      "model_version": "0.9",
+      "model_version_id": "MOD-006@0.9",
+      "name": "Vision Vale",
+      "role": "multimodal",
+      "status": "Under review",
+      "approved_purposes": [
+        "proposed inventory-image analysis"
+      ],
+      "limitations": "No company use before approval; proposed images must exclude people and secrets.",
+      "provider": "Northstar Synthetic Model Services",
+      "owner": "AI Platform",
+      "effective_from": "2026-10-01",
+      "review_due": "2027-01-01",
+      "citation_id": "REG-002@3.0:MOD-006@0.9"
+    },
+    {
+      "model_id": "MOD-007",
+      "model_version": "2.2",
+      "model_version_id": "MOD-007@2.2",
+      "name": "Atlas Text",
+      "role": "generation",
+      "status": "Under review",
+      "approved_purposes": [
+        "proposed upgrade"
+      ],
+      "limitations": "A version upgrade requires change assessment and evaluation; 2.1 approval does not carry over.",
+      "provider": "Northstar Synthetic Model Services",
+      "owner": "AI Platform",
+      "effective_from": "2026-10-01",
+      "review_due": "2027-01-01",
+      "citation_id": "REG-002@3.0:MOD-007@2.2"
+    },
+    {
+      "model_id": "MOD-008",
+      "model_version": "1.1",
+      "model_version_id": "MOD-008@1.1",
+      "name": "Vector Pine",
+      "role": "embedding",
+      "status": "Under review",
+      "approved_purposes": [
+        "proposed embedding upgrade"
+      ],
+      "limitations": "Separate candidate index and migration regressions required; do not mix with 1.0 vectors.",
+      "provider": "Northstar Synthetic Model Services",
+      "owner": "AI Platform",
+      "effective_from": "2026-10-01",
+      "review_due": "2027-01-01",
+      "citation_id": "REG-002@3.0:MOD-008@1.1"
+    }
+  ],
+  "deployments": [
+    {
+      "deployment_id": "DEP-001",
+      "tool_id": "TOL-001",
+      "model_version_ids": [
+        "MOD-001@2.1"
+      ],
+      "status": "Approved",
+      "permitted_data_classes": [
+        "Public",
+        "Internal"
+      ],
+      "purpose": "drafting and summarization",
+      "user_scope": "Employees",
+      "environment": "employee tenant",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-001.northstar.example/api",
+      "identity": "Company SSO",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-001"
+    },
+    {
+      "deployment_id": "DEP-002",
+      "tool_id": "TOL-002",
+      "model_version_ids": [
+        "MOD-002@1.4"
+      ],
+      "status": "Approved",
+      "permitted_data_classes": [
+        "Public",
+        "Internal",
+        "Confidential nonpersonal"
+      ],
+      "purpose": "nonsensitive code assistance",
+      "user_scope": "Engineering",
+      "environment": "engineering tenant",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-002.northstar.example/api",
+      "identity": "Company SSO",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-002"
+    },
+    {
+      "deployment_id": "DEP-003",
+      "tool_id": "TOL-003",
+      "model_version_ids": [
+        "MOD-003@1.2"
+      ],
+      "status": "Approved",
+      "permitted_data_classes": [
+        "Public",
+        "Internal",
+        "Confidential nonpersonal"
+      ],
+      "purpose": "contract summarization",
+      "user_scope": "Legal and authorized Procurement",
+      "environment": "legal tenant",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-003.northstar.example/api",
+      "identity": "Company SSO",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-003"
+    },
+    {
+      "deployment_id": "DEP-004",
+      "tool_id": "TOL-004",
+      "model_version_ids": [
+        "MOD-001@2.1"
+      ],
+      "status": "Approved",
+      "permitted_data_classes": [
+        "Public",
+        "Internal"
+      ],
+      "purpose": "aggregate analysis",
+      "user_scope": "Finance and Operations",
+      "environment": "analytics tenant",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-004.northstar.example/api",
+      "identity": "Company SSO",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-004"
+    },
+    {
+      "deployment_id": "DEP-005",
+      "tool_id": "TOL-005",
+      "model_version_ids": [
+        "MOD-001@2.1"
+      ],
+      "status": "Pilot only",
+      "permitted_data_classes": [
+        "Public",
+        "Internal"
+      ],
+      "purpose": "sanitized meeting summaries",
+      "user_scope": "Named pilot members only",
+      "environment": "pilot tenant",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-005.northstar.example/api",
+      "identity": "Company SSO",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-005"
+    },
+    {
+      "deployment_id": "DEP-006",
+      "tool_id": "TOL-006",
+      "model_version_ids": [
+        "MOD-001@2.1"
+      ],
+      "status": "Approved",
+      "permitted_data_classes": [
+        "Public"
+      ],
+      "purpose": "Public research",
+      "user_scope": "Employees",
+      "environment": "research tenant",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-006.northstar.example/api",
+      "identity": "Company SSO",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-006"
+    },
+    {
+      "deployment_id": "DEP-007",
+      "tool_id": "TOL-007",
+      "model_version_ids": [],
+      "status": "Blocked",
+      "permitted_data_classes": [],
+      "purpose": "none",
+      "user_scope": "None",
+      "environment": "personal consumer service",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-007.northstar.example/api",
+      "identity": "Company SSO",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-007"
+    },
+    {
+      "deployment_id": "DEP-008",
+      "tool_id": "TOL-008",
+      "model_version_ids": [
+        "MOD-006@0.9"
+      ],
+      "status": "Under review",
+      "permitted_data_classes": [],
+      "purpose": "proposed inventory-image analysis",
+      "user_scope": "None until approval",
+      "environment": "proposed image tenant",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-008.northstar.example/api",
+      "identity": "Company SSO",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-008"
+    },
+    {
+      "deployment_id": "DEP-009",
+      "tool_id": "TOL-009",
+      "model_version_ids": [
+        "MOD-001@2.1",
+        "MOD-004@1.0"
+      ],
+      "status": "Under review",
+      "permitted_data_classes": [],
+      "purpose": "customer-facing RAG support",
+      "user_scope": "None until case and deployment clearance",
+      "environment": "proposed customer endpoint",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-009.northstar.example/api",
+      "identity": "Managed workload identity and authenticated app access",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-009"
+    },
+    {
+      "deployment_id": "DEP-010",
+      "tool_id": "TOL-010",
+      "model_version_ids": [
+        "MOD-001@2.1",
+        "MOD-004@1.0"
+      ],
+      "status": "Approved",
+      "permitted_data_classes": [
+        "Public",
+        "Internal"
+      ],
+      "purpose": "internal policy RAG",
+      "user_scope": "Authenticated employees; source ACL enforced",
+      "environment": "internal RAG service",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-010.northstar.example/api",
+      "identity": "Managed workload identity and authenticated app access",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-010"
+    },
+    {
+      "deployment_id": "DEP-011",
+      "tool_id": "TOL-010",
+      "model_version_ids": [
+        "MOD-001@2.1",
+        "MOD-008@1.1"
+      ],
+      "status": "Under review",
+      "permitted_data_classes": [],
+      "purpose": "embedding upgrade candidate",
+      "user_scope": "None until migration approval",
+      "environment": "candidate index service",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-011.northstar.example/api",
+      "identity": "Managed workload identity and authenticated app access",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-011"
+    },
+    {
+      "deployment_id": "DEP-012",
+      "tool_id": "TOL-009",
+      "model_version_ids": [
+        "MOD-001@2.1",
+        "MOD-004@1.0"
+      ],
+      "status": "Revoked",
+      "permitted_data_classes": [],
+      "purpose": "legacy customer support deployment",
+      "user_scope": "None after revocation",
+      "environment": "legacy support endpoint",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-012.northstar.example/api",
+      "identity": "Managed workload identity and authenticated app access",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-11-02T12:00:00Z",
+      "revoked_at": "2026-11-02T12:00:00Z",
+      "citation_id": "REG-002@3.0:DEP-012",
+      "status_history": [
+        {
+          "status": "Approved",
+          "effective_from": "2026-10-01T00:00:00Z",
+          "effective_to": "2026-11-02T12:00:00Z"
+        },
+        {
+          "status": "Revoked",
+          "effective_from": "2026-11-02T12:00:00Z",
+          "effective_to": null
+        }
+      ]
+    },
+    {
+      "deployment_id": "DEP-013",
+      "tool_id": "TOL-010",
+      "model_version_ids": [
+        "MOD-001@2.1",
+        "MOD-004@1.0",
+        "MOD-005@1.0"
+      ],
+      "status": "Pilot only",
+      "permitted_data_classes": [
+        "Public",
+        "Internal"
+      ],
+      "purpose": "internal policy RAG reranking pilot",
+      "user_scope": "Named pilot evaluators only; no production",
+      "environment": "internal RAG service",
+      "region": "US-SYN-1",
+      "endpoint": "https://dep-013.northstar.example/api",
+      "identity": "Managed workload identity and authenticated app access",
+      "provider_training": "Disabled by fictional approved configuration",
+      "retention": "30-day redacted operational logs; no raw prompt logging",
+      "excluded_data": [
+        "Confidential personal",
+        "Restricted"
+      ],
+      "conditions": [
+        "Use exact approved purpose and endpoint",
+        "Review outputs before reliance",
+        "Case approval required for custom applications"
+      ],
+      "owner": "AI Platform & Security",
+      "effective_from": "2026-10-01",
+      "revoked_at": null,
+      "citation_id": "REG-002@3.0:DEP-013"
+    }
+  ]
+}

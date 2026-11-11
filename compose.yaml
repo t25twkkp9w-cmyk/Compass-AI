@@ -1,0 +1,35 @@
+services:
+  postgres:
+    image: postgres:18
+    environment:
+      POSTGRES_DB: compass
+      POSTGRES_USER: compass
+      POSTGRES_PASSWORD: ${COMPASS_DB_PASSWORD:-compass_dev_only}
+    ports: ["127.0.0.1:5432:5432"]
+    volumes: ["postgres_data:/var/lib/postgresql"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U compass -d compass"]
+      interval: 5s
+      retries: 12
+  qdrant:
+    image: qdrant/qdrant:v1.20.0
+    ports: ["127.0.0.1:6333:6333"]
+    volumes: ["qdrant_data:/qdrant/storage"]
+  app:
+    build: .
+    ports: ["127.0.0.1:8600:8600"]
+    environment:
+      DATABASE_URL: postgresql+psycopg://compass:${COMPASS_DB_PASSWORD:-compass_dev_only}@postgres:5432/compass
+      QDRANT_URL: http://qdrant:6333
+      COMPASS_MODE: ${COMPASS_MODE:-local}
+      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      LANGSMITH_API_KEY: ${LANGSMITH_API_KEY:-}
+      COMPASS_REMOTE_TRACING: ${COMPASS_REMOTE_TRACING:-false}
+    volumes: ["app_data:/app/.runtime"]
+    depends_on:
+      postgres: {condition: service_healthy}
+      qdrant: {condition: service_started}
+volumes:
+  postgres_data:
+  qdrant_data:
+  app_data:

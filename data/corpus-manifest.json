@@ -1,0 +1,139 @@
+{
+  "bundle_id": "AI-COMPASS-SYNTHETIC-3.0",
+  "synthetic": true,
+  "snapshot_at": "2026-11-08T00:00:00Z",
+  "isolated_replacement_corpus": true,
+  "counts": {
+    "policy_and_example_sections": 77,
+    "faq_examples": 20,
+    "tools": 10,
+    "model_versions": 8,
+    "deployments": 13,
+    "routing_rules": 10,
+    "actors": 30,
+    "requests": 20,
+    "request_snapshots": 21,
+    "review_findings": 37,
+    "decision_records": 16,
+    "release_records": 11,
+    "conditions": 39,
+    "evidence_artifacts": 24,
+    "audit_events": 185,
+    "evaluation_cases": 50
+  },
+  "ingest_for_embeddings": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    9
+  ],
+  "structured_only": [
+    8,
+    10,
+    11,
+    12
+  ],
+  "catalog_and_routing_authority": "Source 2 and 9 searchable representations do not override their validated structured records.",
+  "files": [
+    {
+      "source_number": 1,
+      "file_name": "01_POL-001.md",
+      "format": "md",
+      "size_bytes": 4093,
+      "sha256": "1dcdbc892addf584db06ba4dbd165dbdf5707b8c38747a0a725a3e845b17772b",
+      "route": "knowledge_rag"
+    },
+    {
+      "source_number": 2,
+      "file_name": "02_REG-002.json",
+      "format": "json",
+      "size_bytes": 24226,
+      "sha256": "f155e9ef308edbc90a7fe17dc6b1e7fc8f037370c5f7d5ff1b28bead870a5957",
+      "route": "knowledge_and_structured_projection"
+    },
+    {
+      "source_number": 3,
+      "file_name": "03_STD-003.md",
+      "format": "md",
+      "size_bytes": 3771,
+      "sha256": "c0eeb2cb2821293dc8bb186fda7d8604ee04731c600046a29cbbfd9e951dec12",
+      "route": "knowledge_rag"
+    },
+    {
+      "source_number": 4,
+      "file_name": "04_PROC-004.md",
+      "format": "md",
+      "size_bytes": 3845,
+      "sha256": "3e80b544f0c2a3fd57093069b3bced658efe6e65db51fe360ee27470c1b686f0",
+      "route": "knowledge_rag"
+    },
+    {
+      "source_number": 5,
+      "file_name": "05_FAQ-005.md",
+      "format": "md",
+      "size_bytes": 5364,
+      "sha256": "36bdcca7497f8bf72f8983bdf2983573a5267e4f902f42644d5ad7e01b9e5949",
+      "route": "knowledge_rag"
+    },
+    {
+      "source_number": 6,
+      "file_name": "06_RSK-006.md",
+      "format": "md",
+      "size_bytes": 3119,
+      "sha256": "7a5fbf24df379dba1a992751366c684c9dd7841b9a8fb780b9b3948e191ebc54",
+      "route": "knowledge_rag"
+    },
+    {
+      "source_number": 7,
+      "file_name": "07_ENG-007.md",
+      "format": "md",
+      "size_bytes": 3716,
+      "sha256": "8a6075fddaf15abad24fc1d68276f21aa208cea10063f4bf631b7b25b007139e",
+      "route": "knowledge_rag"
+    },
+    {
+      "source_number": 8,
+      "file_name": "08_REQ-008.json",
+      "format": "json",
+      "size_bytes": 62428,
+      "sha256": "9ff521fe786c9641176d5c5576add9de9d376e24e8d5f2ac86e6523a27dc4e43",
+      "route": "structured_only"
+    },
+    {
+      "source_number": 9,
+      "file_name": "09_AUTH-009.md",
+      "format": "md",
+      "size_bytes": 5886,
+      "sha256": "8dcb1b5f015bbcf6685dc7b579ac1f2a570071127311dfb0f0c707d545ac3ced",
+      "route": "knowledge_and_structured_projection"
+    },
+    {
+      "source_number": 10,
+      "file_name": "10_DEC-010.json",
+      "format": "json",
+      "size_bytes": 38720,
+      "sha256": "753a85ccaaa4db3afd36e2ec0807134a3af9aa8db336d78fef12b10ba2f7b661",
+      "route": "structured_only"
+    },
+    {
+      "source_number": 11,
+      "file_name": "11_EVD-011.json",
+      "format": "json",
+      "size_bytes": 58627,
+      "sha256": "65dcaf93c8cfd5acc261a070120673957980b2cd0267a561f1975b9bcc6dcd0c",
+      "route": "structured_only"
+    },
+    {
+      "source_number": 12,
+      "file_name": "12_AUD-012.json",
+      "format": "json",
+      "size_bytes": 148619,
+      "sha256": "88617fe00fd47effc8dd9e5e7a226574f36e782b488e085511b8dbff2ee4a44b",
+      "route": "structured_only"
+    }
+  ]
+}

@@ -1,0 +1,1821 @@
+{
+  "metadata": {
+    "source_number": 11,
+    "source_id": "EVD-011",
+    "title": "Control Evidence & Conditions Register",
+    "version": "3.0",
+    "synthetic": true,
+    "snapshot_at": "2026-11-08T00:00:00Z",
+    "access": "case-assignment restricted",
+    "warning": "All artifact reports are fictional fixtures; no real model or security tests were executed.",
+    "owner": "Control Owners and Independent Verifiers",
+    "language": "en",
+    "effective_from": "2026-10-01"
+  },
+  "conditions": [
+    {
+      "condition_id": "CON-001-1-01",
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-13T10:00:00Z",
+      "status": "Submitted",
+      "evidence_ids": [
+        "EVD-001-1-01"
+      ],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-001-1-02",
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-13T10:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-001-1-03",
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "kind": "catalog",
+      "phase": "pre_release",
+      "description": "Publish approved DEP-009 scope in the controlled catalog before any customer traffic.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-13T10:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-001-1-04",
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Review production quality and source freshness weekly; report critical failures immediately.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-27T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-002-1-01",
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-14T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-002-1-01"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-07T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-002-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-002-1-02",
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-14T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-002-1-02"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-07T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-002-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-002-1-04",
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Review production quality and source freshness weekly; report critical failures immediately.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-28T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-004-1-01",
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-16T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-004-1-01"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-09T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-004-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-004-1-02",
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-16T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-004-1-02"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-09T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-004-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-004-1-04",
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Review production quality and source freshness weekly; report critical failures immediately.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-30T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-008-1-01",
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-20T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-008-1-01"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-13T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-008-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-008-1-02",
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-20T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-008-1-02"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-13T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-008-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-008-1-04",
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Review production quality and source freshness weekly; report critical failures immediately.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-11-03T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-009-1-01",
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-14T09:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-009-1-01"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-07T11:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-009-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-009-1-02",
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-14T09:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-009-1-02"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-07T11:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-009-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-010-1-01",
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-22T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-010-1-01"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-15T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-010-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-010-1-02",
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-22T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-010-1-02"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-15T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-010-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-010-1-04",
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Review production quality and source freshness weekly; report critical failures immediately.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-11-05T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-011-1-01",
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-23T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-011-1-01"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-16T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-011-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-011-1-02",
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-23T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-011-1-02"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-16T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-011-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-011-1-04",
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Review production quality and source freshness weekly; report critical failures immediately.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-11-06T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-012-1-01",
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-24T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-012-1-01"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-17T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-012-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-012-1-02",
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-24T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-012-1-02"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-17T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-012-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-012-1-04",
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Review production quality and source freshness weekly; report critical failures immediately.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-11-07T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-013-1-01",
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-25T10:00:00Z",
+      "status": "Submitted",
+      "evidence_ids": [
+        "EVD-013-1-01"
+      ],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-013-1-02",
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-25T10:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": true
+    },
+    {
+      "condition_id": "CON-013-1-04",
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Review production quality and source freshness weekly; report critical failures immediately.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-11-08T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-014-1-01",
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-26T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-014-1-01"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-19T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-014-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-014-1-02",
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-26T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-014-1-02"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-19T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-014-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-014-1-04",
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Review production quality and source freshness weekly; report critical failures immediately.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-11-09T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-016-1-01",
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-28T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-016-1-01"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-21T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-016-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-016-1-02",
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-28T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-016-1-02"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-21T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-016-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-016-1-04",
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Review production quality and source freshness weekly; report critical failures immediately.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-11-11T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-018-1-01",
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-30T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-018-1-01"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-23T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-018-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-018-1-02",
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-30T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-018-1-02"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-23T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-018-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-018-1-04",
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Run ongoing code benchmark monthly during the approved 60-day exception; weekly manual issue review and normal security/code checks continue.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-11-13T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-019-1-01",
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "kind": "eval",
+      "phase": "pre_release",
+      "description": "Provide evaluated configuration, dataset version and RAG metrics with failure disposition.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-31T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-019-1-01"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-24T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-019-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-019-1-02",
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "kind": "security",
+      "phase": "pre_release",
+      "description": "Verify access enforcement, redaction, oversight, fallback and rollback for the exact configuration.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-10-31T10:00:00Z",
+      "status": "Verified",
+      "evidence_ids": [
+        "EVD-019-1-02"
+      ],
+      "verification": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-24T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-019-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    },
+    {
+      "condition_id": "CON-019-1-04",
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "kind": "ongoing",
+      "phase": "ongoing",
+      "description": "Review production quality and source freshness weekly; report critical failures immediately.",
+      "owner_actor_id": "ACT-010",
+      "verifier_actor_id": "ACT-011",
+      "due_at": "2026-11-14T09:00:00Z",
+      "status": "Pending",
+      "evidence_ids": [],
+      "verification": null,
+      "source_citations": [
+        "ENG-007@3.0:S05",
+        "PROC-004@3.0:S07"
+      ],
+      "overdue_at_snapshot": false
+    }
+  ],
+  "evidence_artifacts": [
+    {
+      "evidence_id": "EVD-001-1-01",
+      "version": 1,
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "condition_id": "CON-001-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-06T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-001-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-001:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "231cd84276549ba5c40e93795a3a76becfcace7ed7de652a7c75369a68fef6da"
+    },
+    {
+      "evidence_id": "EVD-002-1-01",
+      "version": 1,
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "condition_id": "CON-002-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-07T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-002-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-002:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "24dbdca8f9644b9d0e457d5e8241b42cdda4a2b30104ae621cd4423bfac8a72c"
+    },
+    {
+      "evidence_id": "EVD-002-1-02",
+      "version": 1,
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "condition_id": "CON-002-1-02",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-07T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-002-1-02/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-002:v1",
+        "type": "security",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "source_access",
+            "declared_result": "pass"
+          },
+          {
+            "name": "version_provenance",
+            "declared_result": "pass"
+          }
+        ],
+        "p95_latency_seconds": null
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "6e426f0ba2df3189f0114aeb4c505d90535119a543bedd5650f1a4f191a60932"
+    },
+    {
+      "evidence_id": "EVD-004-1-01",
+      "version": 1,
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "condition_id": "CON-004-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-09T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-004-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-004:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "d4021bdf1cc1850650bb95d927214d6d8b8e9f2997ec37eacab997b91ef8dea7"
+    },
+    {
+      "evidence_id": "EVD-004-1-02",
+      "version": 1,
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "condition_id": "CON-004-1-02",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-09T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-004-1-02/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-004:v1",
+        "type": "security",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "source_access",
+            "declared_result": "pass"
+          },
+          {
+            "name": "version_provenance",
+            "declared_result": "pass"
+          }
+        ],
+        "p95_latency_seconds": null
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "a4e5e206ff671828d8d40f5d318af681fe4fac2890c715433fc2da3edc984ca3"
+    },
+    {
+      "evidence_id": "EVD-008-1-01",
+      "version": 1,
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "condition_id": "CON-008-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-13T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-008-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-008:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "9a4733bfe27acccce29d1dfe3329faf908d47d29f2b9d5d4d2598c9ee2f81001"
+    },
+    {
+      "evidence_id": "EVD-008-1-02",
+      "version": 1,
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "condition_id": "CON-008-1-02",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-13T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-008-1-02/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-008:v1",
+        "type": "security",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "source_access",
+            "declared_result": "pass"
+          },
+          {
+            "name": "version_provenance",
+            "declared_result": "pass"
+          }
+        ],
+        "p95_latency_seconds": null
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "547035d54cf3b4ba0d64f350009b143dbeb92574df4d946c124a61fb1ea4dee0"
+    },
+    {
+      "evidence_id": "EVD-009-1-01",
+      "version": 1,
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "condition_id": "CON-009-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-07T10:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-009-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-009:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "382a9561d63dbcf817a3a6630fc351a5843bbb5679f2225fd5237373270b3e76"
+    },
+    {
+      "evidence_id": "EVD-009-1-02",
+      "version": 1,
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "condition_id": "CON-009-1-02",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-07T10:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-009-1-02/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-009:v1",
+        "type": "security",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "source_access",
+            "declared_result": "pass"
+          },
+          {
+            "name": "version_provenance",
+            "declared_result": "pass"
+          }
+        ],
+        "p95_latency_seconds": null
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "cf7955669dd596232c7ea2653e3cca655680b75e430043fe71c12c599eed32f8"
+    },
+    {
+      "evidence_id": "EVD-010-1-01",
+      "version": 1,
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "condition_id": "CON-010-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-15T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-010-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-010:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "4cb77fb8be039070acb78cb7175c0544d2c4e2683b3cdb802869647d65d1d112"
+    },
+    {
+      "evidence_id": "EVD-010-1-02",
+      "version": 1,
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "condition_id": "CON-010-1-02",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-15T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-010-1-02/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-010:v1",
+        "type": "security",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "source_access",
+            "declared_result": "pass"
+          },
+          {
+            "name": "version_provenance",
+            "declared_result": "pass"
+          }
+        ],
+        "p95_latency_seconds": null
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "16b523703f59cec44905f7669c4593ca0f9bb0a10bf03ce8f631d74c1e1db14c"
+    },
+    {
+      "evidence_id": "EVD-011-1-01",
+      "version": 1,
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "condition_id": "CON-011-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-16T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-011-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-011:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "f7adbb7213e626e65292119f611726d95d4deaee704639216fd94bf6ed01f34b"
+    },
+    {
+      "evidence_id": "EVD-011-1-02",
+      "version": 1,
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "condition_id": "CON-011-1-02",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-16T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-011-1-02/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-011:v1",
+        "type": "security",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "source_access",
+            "declared_result": "pass"
+          },
+          {
+            "name": "version_provenance",
+            "declared_result": "pass"
+          }
+        ],
+        "p95_latency_seconds": null
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "254aad5e9df90f6758998c54b6dbaeadd03e3103fd14ecaa6a9dcf844ac7c519"
+    },
+    {
+      "evidence_id": "EVD-012-1-01",
+      "version": 1,
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "condition_id": "CON-012-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-17T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-012-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-012:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "2ce32c7a119fc23014c5ab04dda7a95fb312f906596225e193c1147194fd6ddf"
+    },
+    {
+      "evidence_id": "EVD-012-1-02",
+      "version": 1,
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "condition_id": "CON-012-1-02",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-17T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-012-1-02/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-012:v1",
+        "type": "security",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "source_access",
+            "declared_result": "pass"
+          },
+          {
+            "name": "version_provenance",
+            "declared_result": "pass"
+          }
+        ],
+        "p95_latency_seconds": null
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "092893a7c7b062204ec5bcaea495fc51e592d3414fca18fffb4ce9b407af6346"
+    },
+    {
+      "evidence_id": "EVD-013-1-01",
+      "version": 1,
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "condition_id": "CON-013-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-18T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-013-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-013:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "740adb3d57bec43631471e850b249ba5070c2900f60334fb17505e706ce2b0ff"
+    },
+    {
+      "evidence_id": "EVD-014-1-01",
+      "version": 1,
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "condition_id": "CON-014-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-19T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-014-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-014:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "e501a3af710123b721f8bd5fa930bcb1306a1e3525a5add0caa2c4b91860164c"
+    },
+    {
+      "evidence_id": "EVD-014-1-02",
+      "version": 1,
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "condition_id": "CON-014-1-02",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-19T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-014-1-02/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-014:v1",
+        "type": "security",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "source_access",
+            "declared_result": "pass"
+          },
+          {
+            "name": "version_provenance",
+            "declared_result": "pass"
+          }
+        ],
+        "p95_latency_seconds": null
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "f1a9f9973a3882ee8ea773af994d443dd003af998eee2634a9081ed2816809c0"
+    },
+    {
+      "evidence_id": "EVD-016-1-01",
+      "version": 1,
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "condition_id": "CON-016-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-21T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-016-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-016:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "05be54ff43f6623ca2bfa2746416fbfab08dba4df8cec8b6190fed71fa981203"
+    },
+    {
+      "evidence_id": "EVD-016-1-02",
+      "version": 1,
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "condition_id": "CON-016-1-02",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-21T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-016-1-02/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-016:v1",
+        "type": "security",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "source_access",
+            "declared_result": "pass"
+          },
+          {
+            "name": "version_provenance",
+            "declared_result": "pass"
+          }
+        ],
+        "p95_latency_seconds": null
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "e1b4e4d7f7751dcbc0fd86a005742477d0d4524ca3caeb521a6817f74d40afa6"
+    },
+    {
+      "evidence_id": "EVD-018-1-01",
+      "version": 1,
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "condition_id": "CON-018-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-23T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-018-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-018:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "9ee9ee7bcdf8d4f95694bf36035f3ab094e6db3eb7d99c948e097a02d5385f40"
+    },
+    {
+      "evidence_id": "EVD-018-1-02",
+      "version": 1,
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "condition_id": "CON-018-1-02",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-23T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-018-1-02/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-018:v1",
+        "type": "security",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "source_access",
+            "declared_result": "pass"
+          },
+          {
+            "name": "version_provenance",
+            "declared_result": "pass"
+          }
+        ],
+        "p95_latency_seconds": null
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "06f09dd9594f405bd4b78d8f729e559c94c211de97970b7e9a582de6e9cd74c5"
+    },
+    {
+      "evidence_id": "EVD-019-1-01",
+      "version": 1,
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "condition_id": "CON-019-1-01",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-24T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-019-1-01/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-019:v1",
+        "type": "eval",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "required_section_recall_at_5",
+            "numerator": 47,
+            "denominator": 50
+          },
+          {
+            "name": "supported_claims",
+            "numerator": 194,
+            "denominator": 200
+          },
+          {
+            "name": "supported_citations",
+            "numerator": 98,
+            "denominator": 100
+          }
+        ],
+        "p95_latency_seconds": 8.2
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "e41b3bd23ba5e82ea505dc5eb20e1420fff6abd9b6ec53d227c5f61989cdd647"
+    },
+    {
+      "evidence_id": "EVD-019-1-02",
+      "version": 1,
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "condition_id": "CON-019-1-02",
+      "submitted_by": "ACT-010",
+      "submitted_at": "2026-10-24T11:00:00Z",
+      "artifact_uri": "synthetic-evidence://EVD-019-1-02/v1",
+      "artifact_content": {
+        "synthetic_fixture": true,
+        "actual_test_execution": false,
+        "configuration_request": "REQ-019:v1",
+        "type": "security",
+        "summary": "Fictional report for workflow and retrieval tests. It does not establish real performance or control operation.",
+        "checks": [
+          {
+            "name": "source_access",
+            "declared_result": "pass"
+          },
+          {
+            "name": "version_provenance",
+            "declared_result": "pass"
+          }
+        ],
+        "p95_latency_seconds": null
+      },
+      "source_citations": [
+        "ENG-007@3.0:S05"
+      ],
+      "artifact_sha256": "cd09ad92f8fb6ef4553fa3e6fdcbbd126400517664d7dc54f93e907b8001db8e"
+    }
+  ]
+}

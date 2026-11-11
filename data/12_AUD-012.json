@@ -1,0 +1,4310 @@
+{
+  "metadata": {
+    "source_number": 12,
+    "source_id": "AUD-012",
+    "title": "Audit Event Ledger",
+    "version": "3.0",
+    "synthetic": true,
+    "snapshot_at": "2026-11-08T00:00:00Z",
+    "access": "scoped audit read only",
+    "warning": "Demonstration hash chain only. This file is editable and is not a production tamper-resistant ledger.",
+    "owner": "Audit Platform Operations",
+    "language": "en",
+    "effective_from": "2026-10-01"
+  },
+  "events": [
+    {
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-04T09:00:00Z",
+      "actor_id": "ACT-001",
+      "action": "draft_created",
+      "entity_id": "REQ-001",
+      "details": {
+        "title": "Customer support RAG assistant"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-001-v1",
+      "synthetic": true,
+      "event_id": "EVT-0001",
+      "previous_event_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+      "event_hash": "4eed446ddfd97a488bafbf3e916ec662912a1a40c59c250a747516ef75e8a59f"
+    },
+    {
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-04T10:00:00Z",
+      "actor_id": "ACT-001",
+      "action": "request_submitted",
+      "entity_id": "REQ-001",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-009",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-009",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal; no customer transcripts",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Customers",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-001-v1",
+      "synthetic": true,
+      "event_id": "EVT-0002",
+      "previous_event_hash": "4eed446ddfd97a488bafbf3e916ec662912a1a40c59c250a747516ef75e8a59f",
+      "event_hash": "d4f2c2cb226a438bfb598f9558f4d67195b5e994fce94beb7536f83f0ebb7dea"
+    },
+    {
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-04T11:00:00Z",
+      "actor_id": "ACT-002",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-001",
+      "details": {
+        "business_unit": "Customer Operations"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-001-v1",
+      "synthetic": true,
+      "event_id": "EVT-0003",
+      "previous_event_hash": "d4f2c2cb226a438bfb598f9558f4d67195b5e994fce94beb7536f83f0ebb7dea",
+      "event_hash": "b3dd116f81897bb5a0f65d6631a77bc0e80c839a015346994951a259f1c0971e"
+    },
+    {
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-04T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-001",
+      "details": {
+        "risk_tier": "High",
+        "required_reviews": [
+          "Technology",
+          "Security",
+          "Legal",
+          "Compliance/Risk"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-001-v1",
+      "synthetic": true,
+      "event_id": "EVT-0004",
+      "previous_event_hash": "b3dd116f81897bb5a0f65d6631a77bc0e80c839a015346994951a259f1c0971e",
+      "event_hash": "4078ada93ebb4d5bdec55c71a7758b8cf983d8fea4e79c5dc844fd76bc012be3"
+    },
+    {
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-05T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-001-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-001-v1",
+      "synthetic": true,
+      "event_id": "EVT-0005",
+      "previous_event_hash": "4078ada93ebb4d5bdec55c71a7758b8cf983d8fea4e79c5dc844fd76bc012be3",
+      "event_hash": "5338a31815c360361717d04aed34bd53e3f88ce59bcda24e14bb12671b331396"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-05T09:00:00Z",
+      "actor_id": "ACT-019",
+      "action": "draft_created",
+      "entity_id": "REQ-002",
+      "details": {
+        "title": "Employee policy knowledge assistant"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0006",
+      "previous_event_hash": "5338a31815c360361717d04aed34bd53e3f88ce59bcda24e14bb12671b331396",
+      "event_hash": "4f5beb2f47803068bed6c4ec262f8faff069c60e86d9f72760436982a61c7eb4"
+    },
+    {
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-05T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-001-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-001-v1",
+      "synthetic": true,
+      "event_id": "EVT-0007",
+      "previous_event_hash": "4f5beb2f47803068bed6c4ec262f8faff069c60e86d9f72760436982a61c7eb4",
+      "event_hash": "294435b8103fe7889d504915159599ba6f6dec2e15f3d4c4d4858a0c7209e69d"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-05T10:00:00Z",
+      "actor_id": "ACT-019",
+      "action": "request_submitted",
+      "entity_id": "REQ-002",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-010",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal policy documents",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0008",
+      "previous_event_hash": "294435b8103fe7889d504915159599ba6f6dec2e15f3d4c4d4858a0c7209e69d",
+      "event_hash": "f890dd24d1418faec57cb34996b6fbf3664c09aa3f772e4c6c53bb42189acb05"
+    },
+    {
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-05T10:00:00Z",
+      "actor_id": "ACT-022",
+      "action": "request_submitted",
+      "entity_id": "REQ-009",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-010",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal policy corpus",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        }
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-009-v1",
+      "synthetic": true,
+      "event_id": "EVT-0009",
+      "previous_event_hash": "f890dd24d1418faec57cb34996b6fbf3664c09aa3f772e4c6c53bb42189acb05",
+      "event_hash": "bb76a8a9dd89c7fbcd67b57f46077557142f000049d865d342f2c5be44a193fc"
+    },
+    {
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-05T11:00:00Z",
+      "actor_id": "ACT-007",
+      "action": "review_recorded",
+      "entity_id": "REV-001-1-03",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Legal review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-001-v1",
+      "synthetic": true,
+      "event_id": "EVT-0010",
+      "previous_event_hash": "bb76a8a9dd89c7fbcd67b57f46077557142f000049d865d342f2c5be44a193fc",
+      "event_hash": "24bc23a2d3c4e6ca40695472a12c14afe23d9056a1c09dd1c5da49657ee72532"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-05T11:00:00Z",
+      "actor_id": "ACT-026",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-002",
+      "details": {
+        "business_unit": "People Technology"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0011",
+      "previous_event_hash": "24bc23a2d3c4e6ca40695472a12c14afe23d9056a1c09dd1c5da49657ee72532",
+      "event_hash": "fa824fc5c5990f33158462555a354bb204c78795bc097cab125f5a905df6c9be"
+    },
+    {
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-05T12:00:00Z",
+      "actor_id": "ACT-008",
+      "action": "review_recorded",
+      "entity_id": "REV-001-1-04",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Compliance/Risk review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-001-v1",
+      "synthetic": true,
+      "event_id": "EVT-0012",
+      "previous_event_hash": "fa824fc5c5990f33158462555a354bb204c78795bc097cab125f5a905df6c9be",
+      "event_hash": "ca02678e5c4b8e8fea004ceaee3dd5675d7d93700da15114233ee8c617de61a2"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-05T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-002",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0013",
+      "previous_event_hash": "ca02678e5c4b8e8fea004ceaee3dd5675d7d93700da15114233ee8c617de61a2",
+      "event_hash": "35978568bb45f240cad598795a01483539466c049117ba7f34f7cff9dd1417c5"
+    },
+    {
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-06T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-001-1-A",
+      "details": {
+        "disposition": "Approved with conditions",
+        "condition_ids": [
+          "CON-001-1-01",
+          "CON-001-1-02",
+          "CON-001-1-03",
+          "CON-001-1-04"
+        ],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-001-v1",
+      "synthetic": true,
+      "event_id": "EVT-0014",
+      "previous_event_hash": "35978568bb45f240cad598795a01483539466c049117ba7f34f7cff9dd1417c5",
+      "event_hash": "05fe2e9011bdc7d12b58ed3490b8b5dc36385ffb222d44cf46eab9ee84705452"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-06T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-002-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0015",
+      "previous_event_hash": "05fe2e9011bdc7d12b58ed3490b8b5dc36385ffb222d44cf46eab9ee84705452",
+      "event_hash": "155630e44215a51cb3cf56ff17aaa5f5a6474b7b8cda521dfe5443c73b66cfe7"
+    },
+    {
+      "request_id": "REQ-003",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-06T09:00:00Z",
+      "actor_id": "ACT-018",
+      "action": "draft_created",
+      "entity_id": "REQ-003",
+      "details": {
+        "title": "Procurement contract intake extension"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-003-v1",
+      "synthetic": true,
+      "event_id": "EVT-0016",
+      "previous_event_hash": "155630e44215a51cb3cf56ff17aaa5f5a6474b7b8cda521dfe5443c73b66cfe7",
+      "event_hash": "7a1c1aaf2ff608a7e97b3295a6f66af8716dbb56e8558288ebc7d7f735ac0f43"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-06T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-002-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0017",
+      "previous_event_hash": "7a1c1aaf2ff608a7e97b3295a6f66af8716dbb56e8558288ebc7d7f735ac0f43",
+      "event_hash": "6eae1e017e1f460ee0b0ddd1228ff86034b1ef2fd41cb9c3ae7bab554f0c2f8f"
+    },
+    {
+      "request_id": "REQ-003",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-06T10:00:00Z",
+      "actor_id": "ACT-018",
+      "action": "request_submitted",
+      "entity_id": "REQ-003",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-003",
+          "model_version_ids": [
+            "MOD-003@1.2"
+          ],
+          "deployment_id": "DEP-003",
+          "region": "US-SYN-1",
+          "data_description": "Classification unresolved; may contain personal contacts",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-003-v1",
+      "synthetic": true,
+      "event_id": "EVT-0018",
+      "previous_event_hash": "6eae1e017e1f460ee0b0ddd1228ff86034b1ef2fd41cb9c3ae7bab554f0c2f8f",
+      "event_hash": "939198b36e165ebe9d248aa76446c31f81f78539b94dbd063dc35fb4b6b38cbd"
+    },
+    {
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-06T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-001-1-01",
+      "details": {
+        "condition_id": "CON-001-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-001-v1",
+      "synthetic": true,
+      "event_id": "EVT-0019",
+      "previous_event_hash": "939198b36e165ebe9d248aa76446c31f81f78539b94dbd063dc35fb4b6b38cbd",
+      "event_hash": "eb5767ee2068bb08d36b82cf5b6004adf698dd20e2e53a7a1530e75b747ba33f"
+    },
+    {
+      "request_id": "REQ-003",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-06T11:00:00Z",
+      "actor_id": "ACT-028",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-003",
+      "details": {
+        "business_unit": "Procurement"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-003-v1",
+      "synthetic": true,
+      "event_id": "EVT-0020",
+      "previous_event_hash": "eb5767ee2068bb08d36b82cf5b6004adf698dd20e2e53a7a1530e75b747ba33f",
+      "event_hash": "45e95d018deea306f7bc835d82ff0d192d3e1265116e38a5cfe330f5f4dc08e8"
+    },
+    {
+      "request_id": "REQ-003",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-06T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-003",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security",
+          "Legal"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-003-v1",
+      "synthetic": true,
+      "event_id": "EVT-0021",
+      "previous_event_hash": "45e95d018deea306f7bc835d82ff0d192d3e1265116e38a5cfe330f5f4dc08e8",
+      "event_hash": "36f6d76cf365ad4ad7584a6fbe30692ba56112ba4d6afd52e1b9d4f8fa96f39b"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-002-1-A",
+      "details": {
+        "disposition": "Approved",
+        "condition_ids": [
+          "CON-002-1-01",
+          "CON-002-1-02",
+          "CON-002-1-04"
+        ],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0022",
+      "previous_event_hash": "36f6d76cf365ad4ad7584a6fbe30692ba56112ba4d6afd52e1b9d4f8fa96f39b",
+      "event_hash": "fd37ff6720bf83e29ffaee4e2fb2d1c954bc4777af79f81eb52d3331b39add9a"
+    },
+    {
+      "request_id": "REQ-003",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-003-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-003-v1",
+      "synthetic": true,
+      "event_id": "EVT-0023",
+      "previous_event_hash": "fd37ff6720bf83e29ffaee4e2fb2d1c954bc4777af79f81eb52d3331b39add9a",
+      "event_hash": "269a30461a023d64634317703c23a9f5e382aad4f56568b1724b2f7406aad2d7"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T09:00:00Z",
+      "actor_id": "ACT-017",
+      "action": "draft_created",
+      "entity_id": "REQ-004",
+      "details": {
+        "title": "CodeForge pull-request assistant"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0024",
+      "previous_event_hash": "269a30461a023d64634317703c23a9f5e382aad4f56568b1724b2f7406aad2d7",
+      "event_hash": "84ceabf11a2910b52b32a2ed0c38a5eff71f28512249129f23c3aafe33ac35b1"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T10:00:00Z",
+      "actor_id": "ACT-017",
+      "action": "request_submitted",
+      "entity_id": "REQ-004",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-002",
+          "model_version_ids": [
+            "MOD-002@1.4"
+          ],
+          "deployment_id": "DEP-002",
+          "region": "US-SYN-1",
+          "data_description": "Confidential nonpersonal source code",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0025",
+      "previous_event_hash": "84ceabf11a2910b52b32a2ed0c38a5eff71f28512249129f23c3aafe33ac35b1",
+      "event_hash": "b4776f9833f4bbe806155bd79d6cef4901b03c13e9073f406c3556b759d6acb6"
+    },
+    {
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T10:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-009-1-01",
+      "details": {
+        "condition_id": "CON-009-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-009-v1",
+      "synthetic": true,
+      "event_id": "EVT-0026",
+      "previous_event_hash": "b4776f9833f4bbe806155bd79d6cef4901b03c13e9073f406c3556b759d6acb6",
+      "event_hash": "f59cdd2f04fb22e548889179851d84a8c3f3d6ee0bfab8571e91bea4ae49f934"
+    },
+    {
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T10:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-009-1-02",
+      "details": {
+        "condition_id": "CON-009-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-009-v1",
+      "synthetic": true,
+      "event_id": "EVT-0027",
+      "previous_event_hash": "f59cdd2f04fb22e548889179851d84a8c3f3d6ee0bfab8571e91bea4ae49f934",
+      "event_hash": "cbbff599346209046342f11bc098c087c620457c15354b51d8eaf27326f97250"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-002-1-01",
+      "details": {
+        "condition_id": "CON-002-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0028",
+      "previous_event_hash": "cbbff599346209046342f11bc098c087c620457c15354b51d8eaf27326f97250",
+      "event_hash": "6e3b7c392421a34cb06339f9ea0e2e5fb68dd681cab9f4522189aa665cee38a6"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-002-1-02",
+      "details": {
+        "condition_id": "CON-002-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0029",
+      "previous_event_hash": "6e3b7c392421a34cb06339f9ea0e2e5fb68dd681cab9f4522189aa665cee38a6",
+      "event_hash": "ab0dadc9760386f06e123061c1cfa52ebf8c24c7f2bedf7717c62a1b9fe70b6a"
+    },
+    {
+      "request_id": "REQ-003",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T11:00:00Z",
+      "actor_id": "ACT-007",
+      "action": "review_recorded",
+      "entity_id": "REV-003-1-03",
+      "details": {
+        "finding": "Changes requested",
+        "rationale": "Confirm whether supplier personal contacts remain in contracts."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-003-v1",
+      "synthetic": true,
+      "event_id": "EVT-0030",
+      "previous_event_hash": "ab0dadc9760386f06e123061c1cfa52ebf8c24c7f2bedf7717c62a1b9fe70b6a",
+      "event_hash": "3f3306a0a208b1c1999b201d08821c90c3783ecb85751d65657e2489830a6356"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T11:00:00Z",
+      "actor_id": "ACT-024",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-004",
+      "details": {
+        "business_unit": "Engineering"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0031",
+      "previous_event_hash": "3f3306a0a208b1c1999b201d08821c90c3783ecb85751d65657e2489830a6356",
+      "event_hash": "ec4509befb7b7371de87a0e5f28d512bbfe61905cfd70a74e2d9e5860f70d939"
+    },
+    {
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T11:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-009-1-01",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-07T11:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-009-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-009-v1",
+      "synthetic": true,
+      "event_id": "EVT-0032",
+      "previous_event_hash": "ec4509befb7b7371de87a0e5f28d512bbfe61905cfd70a74e2d9e5860f70d939",
+      "event_hash": "2309eb1475e41771522b12e2a8f712f8754715943e4aa2d7fc17db0f26f298dc"
+    },
+    {
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T11:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-009-1-02",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-07T11:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-009-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-009-v1",
+      "synthetic": true,
+      "event_id": "EVT-0033",
+      "previous_event_hash": "2309eb1475e41771522b12e2a8f712f8754715943e4aa2d7fc17db0f26f298dc",
+      "event_hash": "b7d638f7abcebbb350ce1c7eeb50ba86ebbe29da6b1a9c713cddd189f90fb231"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-002-1-01",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-07T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-002-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0034",
+      "previous_event_hash": "b7d638f7abcebbb350ce1c7eeb50ba86ebbe29da6b1a9c713cddd189f90fb231",
+      "event_hash": "1457a986d0579a6acad244cb16b7111e49e0bd3f56500505a46d9ba3a50540e9"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-002-1-02",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-07T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-002-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0035",
+      "previous_event_hash": "1457a986d0579a6acad244cb16b7111e49e0bd3f56500505a46d9ba3a50540e9",
+      "event_hash": "0a45a5e70dd8b669253452b87684ab9f62dae01f7995c6e54d1a487e77c178cd"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-004",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0036",
+      "previous_event_hash": "0a45a5e70dd8b669253452b87684ab9f62dae01f7995c6e54d1a487e77c178cd",
+      "event_hash": "ed8dee8208fe0574b60ac8dc6f01753a1ffd3017c072a2ad59c9d33333df9d13"
+    },
+    {
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-07T12:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-009-1-A",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-010",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal policy corpus",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        }
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-009-v1",
+      "synthetic": true,
+      "event_id": "EVT-0037",
+      "previous_event_hash": "ed8dee8208fe0574b60ac8dc6f01753a1ffd3017c072a2ad59c9d33333df9d13",
+      "event_hash": "7dfa2348e22a7006b3e3264616f2bc8dcc4ad553448e4caccdb2bea3a896e5cc"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-08T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "release_cleared",
+      "entity_id": "REL-002-1",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-010",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal policy documents",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "verified_condition_ids": [
+          "CON-002-1-01",
+          "CON-002-1-02"
+        ]
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-002-v1",
+      "synthetic": true,
+      "event_id": "EVT-0038",
+      "previous_event_hash": "7dfa2348e22a7006b3e3264616f2bc8dcc4ad553448e4caccdb2bea3a896e5cc",
+      "event_hash": "aa9cc34a1f059fe3b51ffa218ee265bcd921def1b937171c4d1d060d68d203bb"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-08T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-004-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0039",
+      "previous_event_hash": "aa9cc34a1f059fe3b51ffa218ee265bcd921def1b937171c4d1d060d68d203bb",
+      "event_hash": "72882e1ba2b4ebaa368718587875d8fd0aa27f8c073a564131479ff13aa6e755"
+    },
+    {
+      "request_id": "REQ-005",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-08T09:00:00Z",
+      "actor_id": "ACT-021",
+      "action": "draft_created",
+      "entity_id": "REQ-005",
+      "details": {
+        "title": "Customer meeting summary pilot"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-005-v1",
+      "synthetic": true,
+      "event_id": "EVT-0040",
+      "previous_event_hash": "72882e1ba2b4ebaa368718587875d8fd0aa27f8c073a564131479ff13aa6e755",
+      "event_hash": "f378c34753c4bf23130c2bd9a893415f442640288cf4dd482223cdc83a0b08e6"
+    },
+    {
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-08T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "release_cleared",
+      "entity_id": "REL-009-1",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-010",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal policy corpus",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        }
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-009-v1",
+      "synthetic": true,
+      "event_id": "EVT-0041",
+      "previous_event_hash": "f378c34753c4bf23130c2bd9a893415f442640288cf4dd482223cdc83a0b08e6",
+      "event_hash": "15fb3c0c0aa7a0d32a95a2a54d1db59d7e785df288d01e94acecddb80ce79517"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-08T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-004-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0042",
+      "previous_event_hash": "15fb3c0c0aa7a0d32a95a2a54d1db59d7e785df288d01e94acecddb80ce79517",
+      "event_hash": "e41566fb30587761344c1c0c355446aaf4bbd2c83ef76f3e11c85782525b734a"
+    },
+    {
+      "request_id": "REQ-005",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-08T10:00:00Z",
+      "actor_id": "ACT-021",
+      "action": "request_submitted",
+      "entity_id": "REQ-005",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-005",
+          "model_version_ids": [
+            "MOD-001@2.1"
+          ],
+          "deployment_id": "DEP-005",
+          "region": "US-SYN-1",
+          "data_description": "Confidential personal",
+          "personal_data_proposed": true,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-005-v1",
+      "synthetic": true,
+      "event_id": "EVT-0043",
+      "previous_event_hash": "e41566fb30587761344c1c0c355446aaf4bbd2c83ef76f3e11c85782525b734a",
+      "event_hash": "98df865b7f4a7e96e143d8e5bbd35797b3be4963f7cfed37f1f739cfe1c2cacc"
+    },
+    {
+      "request_id": "REQ-005",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-08T11:00:00Z",
+      "actor_id": "ACT-027",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-005",
+      "details": {
+        "business_unit": "Sales Enablement"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-005-v1",
+      "synthetic": true,
+      "event_id": "EVT-0044",
+      "previous_event_hash": "98df865b7f4a7e96e143d8e5bbd35797b3be4963f7cfed37f1f739cfe1c2cacc",
+      "event_hash": "2227f3a096597a41d237dcad04e288b4cd141aebb13d78a3364d82d81ba9cd8b"
+    },
+    {
+      "request_id": "REQ-005",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-08T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-005",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security",
+          "Privacy"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-005-v1",
+      "synthetic": true,
+      "event_id": "EVT-0045",
+      "previous_event_hash": "2227f3a096597a41d237dcad04e288b4cd141aebb13d78a3364d82d81ba9cd8b",
+      "event_hash": "817e9c1ff7fe0cccff17b320b2dcd8a29f32166ce2a298006e0eb5c3b01534be"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-09T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-004-1-A",
+      "details": {
+        "disposition": "Approved with conditions",
+        "condition_ids": [
+          "CON-004-1-01",
+          "CON-004-1-02",
+          "CON-004-1-04"
+        ],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0046",
+      "previous_event_hash": "817e9c1ff7fe0cccff17b320b2dcd8a29f32166ce2a298006e0eb5c3b01534be",
+      "event_hash": "24183717753795d95b1a043fb90b0b01f05d0d2699fa9f6975af825d2652a1e7"
+    },
+    {
+      "request_id": "REQ-005",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-09T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-005-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-005-v1",
+      "synthetic": true,
+      "event_id": "EVT-0047",
+      "previous_event_hash": "24183717753795d95b1a043fb90b0b01f05d0d2699fa9f6975af825d2652a1e7",
+      "event_hash": "1a7311d5690b963908600e20db5ca284d38efbc191ed813fa8a2888608fd8506"
+    },
+    {
+      "request_id": "REQ-006",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-09T09:00:00Z",
+      "actor_id": "ACT-015",
+      "action": "draft_created",
+      "entity_id": "REQ-006",
+      "details": {
+        "title": "Inventory image investigation"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-006-v1",
+      "synthetic": true,
+      "event_id": "EVT-0048",
+      "previous_event_hash": "1a7311d5690b963908600e20db5ca284d38efbc191ed813fa8a2888608fd8506",
+      "event_hash": "0b41302cdcee106fef2bcb5ee1716c1a1b9ff109f7ae5a4a377439138ce6a21c"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-09T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-004-1-01",
+      "details": {
+        "condition_id": "CON-004-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0049",
+      "previous_event_hash": "0b41302cdcee106fef2bcb5ee1716c1a1b9ff109f7ae5a4a377439138ce6a21c",
+      "event_hash": "b7be878d484340b8752d18f6407cf06eb8c0fa00455c6704f4191c9160487af9"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-09T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-004-1-02",
+      "details": {
+        "condition_id": "CON-004-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0050",
+      "previous_event_hash": "b7be878d484340b8752d18f6407cf06eb8c0fa00455c6704f4191c9160487af9",
+      "event_hash": "4bb26703f8dc562e06b8698a4a40c008e00b54b308874e4ca19140db7ffb39d1"
+    },
+    {
+      "request_id": "REQ-005",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-09T11:00:00Z",
+      "actor_id": "ACT-009",
+      "action": "review_recorded",
+      "entity_id": "REV-005-1-03",
+      "details": {
+        "finding": "Blocking finding",
+        "rationale": "Raw personal data is excluded from DEP-005; sanitize and resubmit."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-005-v1",
+      "synthetic": true,
+      "event_id": "EVT-0051",
+      "previous_event_hash": "4bb26703f8dc562e06b8698a4a40c008e00b54b308874e4ca19140db7ffb39d1",
+      "event_hash": "d5ab6d76c63ec651ef5dba46cce70e493d6449e01bf124f45c19dc5f2a5e40f3"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-09T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-004-1-01",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-09T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-004-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0052",
+      "previous_event_hash": "d5ab6d76c63ec651ef5dba46cce70e493d6449e01bf124f45c19dc5f2a5e40f3",
+      "event_hash": "c76aee7479fcff42c2766fb84d7f9eed88d95e20c23d012cf0a1c4742d9b4432"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-09T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-004-1-02",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-09T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-004-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0053",
+      "previous_event_hash": "c76aee7479fcff42c2766fb84d7f9eed88d95e20c23d012cf0a1c4742d9b4432",
+      "event_hash": "b1fc65b226a3d971c2cf64aa94225ec63097623d2e47bddb548593e38b928ed0"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-10T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "release_cleared",
+      "entity_id": "REL-004-1",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-002",
+          "model_version_ids": [
+            "MOD-002@1.4"
+          ],
+          "deployment_id": "DEP-002",
+          "region": "US-SYN-1",
+          "data_description": "Confidential nonpersonal source code",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "verified_condition_ids": [
+          "CON-004-1-01",
+          "CON-004-1-02"
+        ]
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-004-v1",
+      "synthetic": true,
+      "event_id": "EVT-0054",
+      "previous_event_hash": "b1fc65b226a3d971c2cf64aa94225ec63097623d2e47bddb548593e38b928ed0",
+      "event_hash": "ddc9e55951441157ee9c470a57403ee2b3fa07ef4a691a7b1f0dd6fe55df1cd3"
+    },
+    {
+      "request_id": "REQ-007",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-10T09:00:00Z",
+      "actor_id": "ACT-019",
+      "action": "draft_created",
+      "entity_id": "REQ-007",
+      "details": {
+        "title": "Autonomous hiring shortlist"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-007-v1",
+      "synthetic": true,
+      "event_id": "EVT-0055",
+      "previous_event_hash": "ddc9e55951441157ee9c470a57403ee2b3fa07ef4a691a7b1f0dd6fe55df1cd3",
+      "event_hash": "aac0a41dec42df4b49bc4083e43031c6ba264ffc1945135626c74948c7903952"
+    },
+    {
+      "request_id": "REQ-007",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-10T10:00:00Z",
+      "actor_id": "ACT-019",
+      "action": "request_submitted",
+      "entity_id": "REQ-007",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-001",
+          "model_version_ids": [
+            "MOD-001@2.1"
+          ],
+          "deployment_id": "DEP-001",
+          "region": "US-SYN-1",
+          "data_description": "Restricted HR performance records",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": true,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-007-v1",
+      "synthetic": true,
+      "event_id": "EVT-0056",
+      "previous_event_hash": "aac0a41dec42df4b49bc4083e43031c6ba264ffc1945135626c74948c7903952",
+      "event_hash": "719dac1419d07109dd1d87bb9f08da360d041bfb7dcc82c678ff8734381328d7"
+    },
+    {
+      "request_id": "REQ-007",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-10T11:00:00Z",
+      "actor_id": "ACT-026",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-007",
+      "details": {
+        "business_unit": "People Operations"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-007-v1",
+      "synthetic": true,
+      "event_id": "EVT-0057",
+      "previous_event_hash": "719dac1419d07109dd1d87bb9f08da360d041bfb7dcc82c678ff8734381328d7",
+      "event_hash": "b5fe278b14b5b443d34ac0cdd5df6a1c96751c781d283f2d7484cfa476aaa218"
+    },
+    {
+      "request_id": "REQ-007",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-10T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-007",
+      "details": {
+        "risk_tier": "Prohibited",
+        "required_reviews": [],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-007-v1",
+      "synthetic": true,
+      "event_id": "EVT-0058",
+      "previous_event_hash": "b5fe278b14b5b443d34ac0cdd5df6a1c96751c781d283f2d7484cfa476aaa218",
+      "event_hash": "6572ebbd51623a21ab604d2c6dda71269a5b2b91b9d079cffbcad58d459d4729"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-11T09:00:00Z",
+      "actor_id": "ACT-019",
+      "action": "draft_created",
+      "entity_id": "REQ-008",
+      "details": {
+        "title": "Policy assistant authorization renewal"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0059",
+      "previous_event_hash": "6572ebbd51623a21ab604d2c6dda71269a5b2b91b9d079cffbcad58d459d4729",
+      "event_hash": "41b46e2d721caf986ae25d1775c25f2a55336649ea8cb8b32d81ac0cc545f7bb"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-11T10:00:00Z",
+      "actor_id": "ACT-019",
+      "action": "request_submitted",
+      "entity_id": "REQ-008",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-010",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal policy documents",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0060",
+      "previous_event_hash": "41b46e2d721caf986ae25d1775c25f2a55336649ea8cb8b32d81ac0cc545f7bb",
+      "event_hash": "8979a82b1674592e46628007003458f76c67def736643a4ccf17b39ce8be3bbb"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-11T11:00:00Z",
+      "actor_id": "ACT-026",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-008",
+      "details": {
+        "business_unit": "People Technology"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0061",
+      "previous_event_hash": "8979a82b1674592e46628007003458f76c67def736643a4ccf17b39ce8be3bbb",
+      "event_hash": "1fa7e960f3ee3d78cc6d04ae2790a1f79c5d7a02319be28c971e9c852d82e3cd"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-11T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-008",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0062",
+      "previous_event_hash": "1fa7e960f3ee3d78cc6d04ae2790a1f79c5d7a02319be28c971e9c852d82e3cd",
+      "event_hash": "864a2195e297cc3e1ef444cef784512ba38bd3ecdaebb035becb192998c3c8bb"
+    },
+    {
+      "request_id": "REQ-007",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-12T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "proposal_rejected",
+      "entity_id": "DEC-007-1-A",
+      "details": {
+        "disposition": "Rejected",
+        "condition_ids": [],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-007-v1",
+      "synthetic": true,
+      "event_id": "EVT-0063",
+      "previous_event_hash": "864a2195e297cc3e1ef444cef784512ba38bd3ecdaebb035becb192998c3c8bb",
+      "event_hash": "4650ac26d4a6e521803a2710ea173750471a97a4336dfc6846afe5f680abb09b"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-12T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-008-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0064",
+      "previous_event_hash": "4650ac26d4a6e521803a2710ea173750471a97a4336dfc6846afe5f680abb09b",
+      "event_hash": "767dde100b3d2e1ee4a7980a298a55938101e539f30786170ec4f9afa65e9d20"
+    },
+    {
+      "request_id": "REQ-009",
+      "request_version": 2,
+      "occurred_at_utc": "2026-10-12T09:00:00Z",
+      "actor_id": "ACT-022",
+      "action": "draft_created",
+      "entity_id": "REQ-009",
+      "details": {
+        "title": "Embedding migration to Vector Pine 1.1"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-009-v2",
+      "synthetic": true,
+      "event_id": "EVT-0065",
+      "previous_event_hash": "767dde100b3d2e1ee4a7980a298a55938101e539f30786170ec4f9afa65e9d20",
+      "event_hash": "409709621ae488c0483de316ac12085b0bf47a12a9da4a1c48fc7a95acce70c3"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-12T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-008-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0066",
+      "previous_event_hash": "409709621ae488c0483de316ac12085b0bf47a12a9da4a1c48fc7a95acce70c3",
+      "event_hash": "21ef03339776c9996d895b1833f2c958aa74dcf89b2b29ebf9d1827a5ed639d7"
+    },
+    {
+      "request_id": "REQ-009",
+      "request_version": 2,
+      "occurred_at_utc": "2026-10-12T10:00:00Z",
+      "actor_id": "ACT-022",
+      "action": "request_submitted",
+      "entity_id": "REQ-009",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-008@1.1"
+          ],
+          "deployment_id": "DEP-011",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal policy corpus",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-009-v2",
+      "synthetic": true,
+      "event_id": "EVT-0067",
+      "previous_event_hash": "21ef03339776c9996d895b1833f2c958aa74dcf89b2b29ebf9d1827a5ed639d7",
+      "event_hash": "8b3fa23e070ab3b429fe3bc14d1605905dca5d72ae1cadfe06fe31c36033a3d7"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-13T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-008-1-A",
+      "details": {
+        "disposition": "Approved",
+        "condition_ids": [
+          "CON-008-1-01",
+          "CON-008-1-02",
+          "CON-008-1-04"
+        ],
+        "valid_until": "2026-10-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0068",
+      "previous_event_hash": "8b3fa23e070ab3b429fe3bc14d1605905dca5d72ae1cadfe06fe31c36033a3d7",
+      "event_hash": "bc03a1cbb2aea0e0a49a07e4a999cd1d0e716dea9243924374d34d4d2cc5c1e4"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-13T09:00:00Z",
+      "actor_id": "ACT-001",
+      "action": "draft_created",
+      "entity_id": "REQ-010",
+      "details": {
+        "title": "Legacy support assistant incident"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0069",
+      "previous_event_hash": "bc03a1cbb2aea0e0a49a07e4a999cd1d0e716dea9243924374d34d4d2cc5c1e4",
+      "event_hash": "3b51f859d48a8edadcef0a09546d44ebb0065b56ac5cf0f89cab4f0b9f3b047c"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-13T10:00:00Z",
+      "actor_id": "ACT-001",
+      "action": "request_submitted",
+      "entity_id": "REQ-010",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-009",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-012",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal intended scope; incident investigation",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Customers",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0070",
+      "previous_event_hash": "3b51f859d48a8edadcef0a09546d44ebb0065b56ac5cf0f89cab4f0b9f3b047c",
+      "event_hash": "a41e8ab4c55a294d3744da0c19db169c923f027c5397dfd48bdce5b65b12a5dd"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-13T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-008-1-01",
+      "details": {
+        "condition_id": "CON-008-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0071",
+      "previous_event_hash": "a41e8ab4c55a294d3744da0c19db169c923f027c5397dfd48bdce5b65b12a5dd",
+      "event_hash": "b9ec970c7d4d7ce92bffc73eaa887940b8c58919a241ab6439a62a84dd92cda7"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-13T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-008-1-02",
+      "details": {
+        "condition_id": "CON-008-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0072",
+      "previous_event_hash": "b9ec970c7d4d7ce92bffc73eaa887940b8c58919a241ab6439a62a84dd92cda7",
+      "event_hash": "972af1756c10fc60d19e0d443e15e42d56f91069dfbbfb3181047eb9c65a3b6f"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-13T11:00:00Z",
+      "actor_id": "ACT-002",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-010",
+      "details": {
+        "business_unit": "Customer Operations"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0073",
+      "previous_event_hash": "972af1756c10fc60d19e0d443e15e42d56f91069dfbbfb3181047eb9c65a3b6f",
+      "event_hash": "f407d4d8fdc176bbf94fd48a488499f7a3b0793795ad5783f832baf2b15f8f39"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-13T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-008-1-01",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-13T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-008-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0074",
+      "previous_event_hash": "f407d4d8fdc176bbf94fd48a488499f7a3b0793795ad5783f832baf2b15f8f39",
+      "event_hash": "f4c42dc232a967920d63a8d34c137f918666a4073f29be302271c51b19bdcbbc"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-13T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-008-1-02",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-13T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-008-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0075",
+      "previous_event_hash": "f4c42dc232a967920d63a8d34c137f918666a4073f29be302271c51b19bdcbbc",
+      "event_hash": "2a19269aac643f85731a1a648f4dcea52bfa58193271faeda885b127cb8bcf4f"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-13T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-010",
+      "details": {
+        "risk_tier": "High",
+        "required_reviews": [
+          "Technology",
+          "Security",
+          "Legal",
+          "Compliance/Risk"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0076",
+      "previous_event_hash": "2a19269aac643f85731a1a648f4dcea52bfa58193271faeda885b127cb8bcf4f",
+      "event_hash": "789704e677f47810734c5ad9c52dc40b736ea734a6732eb5389e9c1d0368f380"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-14T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "release_cleared",
+      "entity_id": "REL-008-1",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-010",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal policy documents",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "verified_condition_ids": [
+          "CON-008-1-01",
+          "CON-008-1-02"
+        ]
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0077",
+      "previous_event_hash": "789704e677f47810734c5ad9c52dc40b736ea734a6732eb5389e9c1d0368f380",
+      "event_hash": "9072841b31dcc0d5127b719f13b871d6fbdd4568bb2a62afa5b7063806e70eb5"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-14T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-010-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0078",
+      "previous_event_hash": "9072841b31dcc0d5127b719f13b871d6fbdd4568bb2a62afa5b7063806e70eb5",
+      "event_hash": "227db0f5b91d59daa138d3e60aedee4d2371f3d8ac3e9b483ddba9f6fed873ae"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-14T09:00:00Z",
+      "actor_id": "ACT-016",
+      "action": "draft_created",
+      "entity_id": "REQ-011",
+      "details": {
+        "title": "Aggregate weekly sales analysis"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0079",
+      "previous_event_hash": "227db0f5b91d59daa138d3e60aedee4d2371f3d8ac3e9b483ddba9f6fed873ae",
+      "event_hash": "9af6d4a57425e5127895f070fefe8ce7b564a6108fcf749eb3b4e589c505b86e"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-14T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-010-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0080",
+      "previous_event_hash": "9af6d4a57425e5127895f070fefe8ce7b564a6108fcf749eb3b4e589c505b86e",
+      "event_hash": "f4b15b99870ffbbbe1865f8dd520a9ae0720d80890d923f44f68d22eaca60eed"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-14T10:00:00Z",
+      "actor_id": "ACT-016",
+      "action": "request_submitted",
+      "entity_id": "REQ-011",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-004",
+          "model_version_ids": [
+            "MOD-001@2.1"
+          ],
+          "deployment_id": "DEP-004",
+          "region": "US-SYN-1",
+          "data_description": "Internal aggregate sales",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0081",
+      "previous_event_hash": "f4b15b99870ffbbbe1865f8dd520a9ae0720d80890d923f44f68d22eaca60eed",
+      "event_hash": "dc4a199f6dddd5fb96c11f5c7072ed69a4c2dd13ac7eb604b605514482333234"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-14T11:00:00Z",
+      "actor_id": "ACT-007",
+      "action": "review_recorded",
+      "entity_id": "REV-010-1-03",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Legal review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0082",
+      "previous_event_hash": "dc4a199f6dddd5fb96c11f5c7072ed69a4c2dd13ac7eb604b605514482333234",
+      "event_hash": "f1d44540880cd41c0d3334794cac895aeea4ba4adf900534ae61f292dec0b389"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-14T11:00:00Z",
+      "actor_id": "ACT-025",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-011",
+      "details": {
+        "business_unit": "Finance"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0083",
+      "previous_event_hash": "f1d44540880cd41c0d3334794cac895aeea4ba4adf900534ae61f292dec0b389",
+      "event_hash": "7973939d4272003798e8657bde56f457d96f065dc8df377b0883ede53cc54fa4"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-14T12:00:00Z",
+      "actor_id": "ACT-008",
+      "action": "review_recorded",
+      "entity_id": "REV-010-1-04",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Compliance/Risk review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0084",
+      "previous_event_hash": "7973939d4272003798e8657bde56f457d96f065dc8df377b0883ede53cc54fa4",
+      "event_hash": "0f4016ce7f59d536eda6ddcb558e12fdd9845374b7cfe32277610e9ffac08b4d"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-14T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-011",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0085",
+      "previous_event_hash": "0f4016ce7f59d536eda6ddcb558e12fdd9845374b7cfe32277610e9ffac08b4d",
+      "event_hash": "f49b9e30ed3e9e48d97879771654c224c7985e242bb282524c9993bbcb7ec7b8"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-15T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-010-1-A",
+      "details": {
+        "disposition": "Approved",
+        "condition_ids": [
+          "CON-010-1-01",
+          "CON-010-1-02",
+          "CON-010-1-04"
+        ],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0086",
+      "previous_event_hash": "f49b9e30ed3e9e48d97879771654c224c7985e242bb282524c9993bbcb7ec7b8",
+      "event_hash": "37f4da0c4e0dca8bba3b6b571ed0b04e4305651f35faf0ce2ee19cb7eda33c01"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-15T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-011-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0087",
+      "previous_event_hash": "37f4da0c4e0dca8bba3b6b571ed0b04e4305651f35faf0ce2ee19cb7eda33c01",
+      "event_hash": "145fc80167d77eaae86733736f1fa181223ca58d7da6798a4651549ab63b1eab"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-15T09:00:00Z",
+      "actor_id": "ACT-020",
+      "action": "draft_created",
+      "entity_id": "REQ-012",
+      "details": {
+        "title": "Public campaign drafting workflow"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0088",
+      "previous_event_hash": "145fc80167d77eaae86733736f1fa181223ca58d7da6798a4651549ab63b1eab",
+      "event_hash": "bcbc3334c75ba827be9c37c4ad7b6baf87303185c05c67451114445613604db6"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-15T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-011-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0089",
+      "previous_event_hash": "bcbc3334c75ba827be9c37c4ad7b6baf87303185c05c67451114445613604db6",
+      "event_hash": "b1c8c71d8200e2b8c780ac563c3fc131eff6aed80d8000ce0b4ff022acd24af6"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-15T10:00:00Z",
+      "actor_id": "ACT-020",
+      "action": "request_submitted",
+      "entity_id": "REQ-012",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-001",
+          "model_version_ids": [
+            "MOD-001@2.1"
+          ],
+          "deployment_id": "DEP-001",
+          "region": "US-SYN-1",
+          "data_description": "Public approved product information",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0090",
+      "previous_event_hash": "b1c8c71d8200e2b8c780ac563c3fc131eff6aed80d8000ce0b4ff022acd24af6",
+      "event_hash": "c522642a703edd38795903db03237bbcf6831db878540bf185cec6668886dd41"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-15T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-010-1-01",
+      "details": {
+        "condition_id": "CON-010-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0091",
+      "previous_event_hash": "c522642a703edd38795903db03237bbcf6831db878540bf185cec6668886dd41",
+      "event_hash": "dc66684c048385c7af3013ce3d0d7a032c9ffb2adae0fd0bf764499e95644038"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-15T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-010-1-02",
+      "details": {
+        "condition_id": "CON-010-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0092",
+      "previous_event_hash": "dc66684c048385c7af3013ce3d0d7a032c9ffb2adae0fd0bf764499e95644038",
+      "event_hash": "b60b3424c602e149793b8524646d45187754e3c578b757c7f89e8a8b425f5000"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-15T11:00:00Z",
+      "actor_id": "ACT-029",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-012",
+      "details": {
+        "business_unit": "Marketing"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0093",
+      "previous_event_hash": "b60b3424c602e149793b8524646d45187754e3c578b757c7f89e8a8b425f5000",
+      "event_hash": "465266aec922fe064eec5d1b9dfe53cc3fff57cfca3c288b8421c59650609ad9"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-15T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-010-1-01",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-15T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-010-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0094",
+      "previous_event_hash": "465266aec922fe064eec5d1b9dfe53cc3fff57cfca3c288b8421c59650609ad9",
+      "event_hash": "73e9aee0039b4a03c84757a47fe677e3f0f67f348dccbc8902fda4bab2b1056d"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-15T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-010-1-02",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-15T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-010-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0095",
+      "previous_event_hash": "73e9aee0039b4a03c84757a47fe677e3f0f67f348dccbc8902fda4bab2b1056d",
+      "event_hash": "74c6249423dddfff26b36ee71ec0cd66a1548ad9933156fcfec62d5bd0836efb"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-15T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-012",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0096",
+      "previous_event_hash": "74c6249423dddfff26b36ee71ec0cd66a1548ad9933156fcfec62d5bd0836efb",
+      "event_hash": "8f162e964b17fbcfba4290cf0e9c1387fd185fc43091204aeedacdee49474b6b"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "release_cleared",
+      "entity_id": "REL-010-1",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-009",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-012",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal intended scope; incident investigation",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Customers",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "verified_condition_ids": [
+          "CON-010-1-01",
+          "CON-010-1-02"
+        ]
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0097",
+      "previous_event_hash": "8f162e964b17fbcfba4290cf0e9c1387fd185fc43091204aeedacdee49474b6b",
+      "event_hash": "36d5c435ae9095f273f027acebd931c1f18255d3d180ec16351da6fde9e38325"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-011-1-A",
+      "details": {
+        "disposition": "Approved",
+        "condition_ids": [
+          "CON-011-1-01",
+          "CON-011-1-02",
+          "CON-011-1-04"
+        ],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0098",
+      "previous_event_hash": "36d5c435ae9095f273f027acebd931c1f18255d3d180ec16351da6fde9e38325",
+      "event_hash": "63eccb089597dc98468244f9063c3875efe2d7a428c6e3ebd5c7165f37652c85"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-012-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0099",
+      "previous_event_hash": "63eccb089597dc98468244f9063c3875efe2d7a428c6e3ebd5c7165f37652c85",
+      "event_hash": "70c25edfc05218dc6ee1ca9bbaa7e385cc64b9d6b20eeb1173c3a43536089857"
+    },
+    {
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T09:00:00Z",
+      "actor_id": "ACT-022",
+      "action": "draft_created",
+      "entity_id": "REQ-013",
+      "details": {
+        "title": "Policy RAG reranker experiment"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-013-v1",
+      "synthetic": true,
+      "event_id": "EVT-0100",
+      "previous_event_hash": "70c25edfc05218dc6ee1ca9bbaa7e385cc64b9d6b20eeb1173c3a43536089857",
+      "event_hash": "26f39dba62cf74a7939a79fffe4ba0161f852dbe41ff9755703295ddf9ad9c6c"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-012-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0101",
+      "previous_event_hash": "26f39dba62cf74a7939a79fffe4ba0161f852dbe41ff9755703295ddf9ad9c6c",
+      "event_hash": "ebc2d5eb20d4c65971df516f383d8feadea74f779d3eb456aee9857e4105a408"
+    },
+    {
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T10:00:00Z",
+      "actor_id": "ACT-022",
+      "action": "request_submitted",
+      "entity_id": "REQ-013",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0",
+            "MOD-005@1.0"
+          ],
+          "deployment_id": "DEP-013",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal synthetic policy questions",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-013-v1",
+      "synthetic": true,
+      "event_id": "EVT-0102",
+      "previous_event_hash": "ebc2d5eb20d4c65971df516f383d8feadea74f779d3eb456aee9857e4105a408",
+      "event_hash": "2b96157180018272d152437bf2dda839877d5282c34e3018eb26fd6ee4e6182a"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-011-1-01",
+      "details": {
+        "condition_id": "CON-011-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0103",
+      "previous_event_hash": "2b96157180018272d152437bf2dda839877d5282c34e3018eb26fd6ee4e6182a",
+      "event_hash": "284ecdd79726b92c7bd24b8c0be9f796592be630df8a68e209c7ef0cb78d41c0"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-011-1-02",
+      "details": {
+        "condition_id": "CON-011-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0104",
+      "previous_event_hash": "284ecdd79726b92c7bd24b8c0be9f796592be630df8a68e209c7ef0cb78d41c0",
+      "event_hash": "c08a14e503a1cdabd6fcb64ecdc0cdc6392c98f65e4a6c230930e0a5da47faab"
+    },
+    {
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T11:00:00Z",
+      "actor_id": "ACT-024",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-013",
+      "details": {
+        "business_unit": "AI Quality"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-013-v1",
+      "synthetic": true,
+      "event_id": "EVT-0105",
+      "previous_event_hash": "c08a14e503a1cdabd6fcb64ecdc0cdc6392c98f65e4a6c230930e0a5da47faab",
+      "event_hash": "f6b7afb9acedd92d33e39223d9afd2585973339d745566528d240bbc48b27888"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-011-1-01",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-16T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-011-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0106",
+      "previous_event_hash": "f6b7afb9acedd92d33e39223d9afd2585973339d745566528d240bbc48b27888",
+      "event_hash": "6d7a20bdf41fdc749c6b584dc7a38fc29a677bde5fcf5560092a7b4a27a2744a"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-011-1-02",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-16T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-011-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0107",
+      "previous_event_hash": "6d7a20bdf41fdc749c6b584dc7a38fc29a677bde5fcf5560092a7b4a27a2744a",
+      "event_hash": "3d49a01a0818a0dae90741a4d311d003f234ea909b08c54180aede0bd7afe5dc"
+    },
+    {
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-16T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-013",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-013-v1",
+      "synthetic": true,
+      "event_id": "EVT-0108",
+      "previous_event_hash": "3d49a01a0818a0dae90741a4d311d003f234ea909b08c54180aede0bd7afe5dc",
+      "event_hash": "9e3ed4c0319ceebfe019009d8f51e569047a89ee634067cc49778a8eda9a28da"
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "release_cleared",
+      "entity_id": "REL-011-1",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-004",
+          "model_version_ids": [
+            "MOD-001@2.1"
+          ],
+          "deployment_id": "DEP-004",
+          "region": "US-SYN-1",
+          "data_description": "Internal aggregate sales",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "verified_condition_ids": [
+          "CON-011-1-01",
+          "CON-011-1-02"
+        ]
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-011-v1",
+      "synthetic": true,
+      "event_id": "EVT-0109",
+      "previous_event_hash": "9e3ed4c0319ceebfe019009d8f51e569047a89ee634067cc49778a8eda9a28da",
+      "event_hash": "b5c817c204fd75dcc1994ad0da2bdab881d36d09ad5d40640ec12be4f0689f76"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-012-1-A",
+      "details": {
+        "disposition": "Approved",
+        "condition_ids": [
+          "CON-012-1-01",
+          "CON-012-1-02",
+          "CON-012-1-04"
+        ],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0110",
+      "previous_event_hash": "b5c817c204fd75dcc1994ad0da2bdab881d36d09ad5d40640ec12be4f0689f76",
+      "event_hash": "c917f623f2780a550ab4d877be980c2096f237fa0adf64cce4bc012445dabdcc"
+    },
+    {
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-013-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-013-v1",
+      "synthetic": true,
+      "event_id": "EVT-0111",
+      "previous_event_hash": "c917f623f2780a550ab4d877be980c2096f237fa0adf64cce4bc012445dabdcc",
+      "event_hash": "a02c45a8b4ce3ce062a78a7dddc6d9c5f1a74a8859597e4c2fb5c2821cdad0c9"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T09:00:00Z",
+      "actor_id": "ACT-015",
+      "action": "draft_created",
+      "entity_id": "REQ-014",
+      "details": {
+        "title": "Maintenance SOP drafting assistant"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0112",
+      "previous_event_hash": "a02c45a8b4ce3ce062a78a7dddc6d9c5f1a74a8859597e4c2fb5c2821cdad0c9",
+      "event_hash": "ff083eca6fde0b8869a2577fe303c5efd25e9507a7035ae4a27f1a95bba3dcf9"
+    },
+    {
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-013-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-013-v1",
+      "synthetic": true,
+      "event_id": "EVT-0113",
+      "previous_event_hash": "ff083eca6fde0b8869a2577fe303c5efd25e9507a7035ae4a27f1a95bba3dcf9",
+      "event_hash": "0d41f179e30fe1ea2d3309e51d5406c8115772b56228fa7e531e200c234c2265"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T10:00:00Z",
+      "actor_id": "ACT-015",
+      "action": "request_submitted",
+      "entity_id": "REQ-014",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-001",
+          "model_version_ids": [
+            "MOD-001@2.1"
+          ],
+          "deployment_id": "DEP-001",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal nonsensitive manuals",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0114",
+      "previous_event_hash": "0d41f179e30fe1ea2d3309e51d5406c8115772b56228fa7e531e200c234c2265",
+      "event_hash": "d4eaddc5ecad8592a9ea71e8f757ff28a8c9b3fbf6df0011f3d16580444836ee"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-012-1-01",
+      "details": {
+        "condition_id": "CON-012-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0115",
+      "previous_event_hash": "d4eaddc5ecad8592a9ea71e8f757ff28a8c9b3fbf6df0011f3d16580444836ee",
+      "event_hash": "e8e6af76c534a085e0a84229fb3eccd21065dea0adead33c6ad876ad24d50f75"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-012-1-02",
+      "details": {
+        "condition_id": "CON-012-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0116",
+      "previous_event_hash": "e8e6af76c534a085e0a84229fb3eccd21065dea0adead33c6ad876ad24d50f75",
+      "event_hash": "d43bbd276d60b2584d912b91f8162ed9833084cdaa05607cc743ef83eb565cdc"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T11:00:00Z",
+      "actor_id": "ACT-023",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-014",
+      "details": {
+        "business_unit": "Warehouse Reliability"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0117",
+      "previous_event_hash": "d43bbd276d60b2584d912b91f8162ed9833084cdaa05607cc743ef83eb565cdc",
+      "event_hash": "1316c7d8a4ee7741685d56147794c6d5699547e5c506baba3179363d0da695bf"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-012-1-01",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-17T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-012-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0118",
+      "previous_event_hash": "1316c7d8a4ee7741685d56147794c6d5699547e5c506baba3179363d0da695bf",
+      "event_hash": "e82b54694b87f03bb557acaee8d79e7c4f8b984143586295137ac989694cd6e3"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-012-1-02",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-17T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-012-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0119",
+      "previous_event_hash": "e82b54694b87f03bb557acaee8d79e7c4f8b984143586295137ac989694cd6e3",
+      "event_hash": "53938a5e556e297c82613eb3cfe58aacfa988f0f5a54c40f5750e879af83e41c"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-17T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-014",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0120",
+      "previous_event_hash": "53938a5e556e297c82613eb3cfe58aacfa988f0f5a54c40f5750e879af83e41c",
+      "event_hash": "1c85be11675e19d09a65688bc3ec61fbbe97daafe12295d2c063cf710a52d052"
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-18T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "release_cleared",
+      "entity_id": "REL-012-1",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-001",
+          "model_version_ids": [
+            "MOD-001@2.1"
+          ],
+          "deployment_id": "DEP-001",
+          "region": "US-SYN-1",
+          "data_description": "Public approved product information",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "verified_condition_ids": [
+          "CON-012-1-01",
+          "CON-012-1-02"
+        ]
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-012-v1",
+      "synthetic": true,
+      "event_id": "EVT-0121",
+      "previous_event_hash": "1c85be11675e19d09a65688bc3ec61fbbe97daafe12295d2c063cf710a52d052",
+      "event_hash": "88e1db0ef4295e5f90505ce2c180853e78e5158734b5f9d8682b04a693eb06cc"
+    },
+    {
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-18T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-013-1-A",
+      "details": {
+        "disposition": "Approved with conditions",
+        "condition_ids": [
+          "CON-013-1-01",
+          "CON-013-1-02",
+          "CON-013-1-04"
+        ],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-013-v1",
+      "synthetic": true,
+      "event_id": "EVT-0122",
+      "previous_event_hash": "88e1db0ef4295e5f90505ce2c180853e78e5158734b5f9d8682b04a693eb06cc",
+      "event_hash": "857e7c6907bb4081c6a3d27b65be39f63a94e3fccf65dfbdd7e184348ca0127e"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-18T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-014-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0123",
+      "previous_event_hash": "857e7c6907bb4081c6a3d27b65be39f63a94e3fccf65dfbdd7e184348ca0127e",
+      "event_hash": "724c05b7ab2972c6e718b806bff71a7440f4450ffcf5f3acc57277219e0d3e9f"
+    },
+    {
+      "request_id": "REQ-015",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-18T09:00:00Z",
+      "actor_id": "ACT-015",
+      "action": "draft_created",
+      "entity_id": "REQ-015",
+      "details": {
+        "title": "Thermal inspection image assistant"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-015-v1",
+      "synthetic": true,
+      "event_id": "EVT-0124",
+      "previous_event_hash": "724c05b7ab2972c6e718b806bff71a7440f4450ffcf5f3acc57277219e0d3e9f",
+      "event_hash": "b56118819562c5b0d497c588c1732b11811fc0ebbb2377c1fd91c8ca1c0d25c9"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-18T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-014-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0125",
+      "previous_event_hash": "b56118819562c5b0d497c588c1732b11811fc0ebbb2377c1fd91c8ca1c0d25c9",
+      "event_hash": "0b2b21966dee054233d31fa0876e8d39618aabb2d8a46583d7a577aa8c016f20"
+    },
+    {
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-18T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-013-1-01",
+      "details": {
+        "condition_id": "CON-013-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-013-v1",
+      "synthetic": true,
+      "event_id": "EVT-0126",
+      "previous_event_hash": "0b2b21966dee054233d31fa0876e8d39618aabb2d8a46583d7a577aa8c016f20",
+      "event_hash": "fcb94ba675c7d1c7d22b0cabfde0ba235672c61b8ed76eac3df702ba5bbd71c8"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-19T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-014-1-A",
+      "details": {
+        "disposition": "Approved",
+        "condition_ids": [
+          "CON-014-1-01",
+          "CON-014-1-02",
+          "CON-014-1-04"
+        ],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0127",
+      "previous_event_hash": "fcb94ba675c7d1c7d22b0cabfde0ba235672c61b8ed76eac3df702ba5bbd71c8",
+      "event_hash": "460daef10eb0945cb2937bd5de250d9f942eee06bd7514514356f6fd5ab4dc9f"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-19T09:00:00Z",
+      "actor_id": "ACT-012",
+      "action": "draft_created",
+      "entity_id": "REQ-016",
+      "details": {
+        "title": "Audit policy evidence assistant"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0128",
+      "previous_event_hash": "460daef10eb0945cb2937bd5de250d9f942eee06bd7514514356f6fd5ab4dc9f",
+      "event_hash": "83b20c64ee0be807333e3bbf0c2d7880c1f713fd597b44b13170b4cecd72347f"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-19T10:00:00Z",
+      "actor_id": "ACT-012",
+      "action": "request_submitted",
+      "entity_id": "REQ-016",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-010",
+          "region": "US-SYN-1",
+          "data_description": "Internal policies; case access restricted by assignment",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0129",
+      "previous_event_hash": "83b20c64ee0be807333e3bbf0c2d7880c1f713fd597b44b13170b4cecd72347f",
+      "event_hash": "811ec2e9ec1501f052ecd8f0b26fd7db360e340e78d4796a2a8b1275bb686d98"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-19T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-014-1-01",
+      "details": {
+        "condition_id": "CON-014-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0130",
+      "previous_event_hash": "811ec2e9ec1501f052ecd8f0b26fd7db360e340e78d4796a2a8b1275bb686d98",
+      "event_hash": "d92b10cfb3268a1aee3224f6166837b4f84ac7506c94434c33cd019af19afe0d"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-19T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-014-1-02",
+      "details": {
+        "condition_id": "CON-014-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0131",
+      "previous_event_hash": "d92b10cfb3268a1aee3224f6166837b4f84ac7506c94434c33cd019af19afe0d",
+      "event_hash": "5d9fa188dffa8ab37736d2a43f6905033edcec174ecaf4fc15db95f7cf080b21"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-19T11:00:00Z",
+      "actor_id": "ACT-030",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-016",
+      "details": {
+        "business_unit": "Internal Audit"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0132",
+      "previous_event_hash": "5d9fa188dffa8ab37736d2a43f6905033edcec174ecaf4fc15db95f7cf080b21",
+      "event_hash": "7811e031822aa63864678d129d33524b0df1b81fe6db668d75dc44787f40e3cb"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-19T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-014-1-01",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-19T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-014-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0133",
+      "previous_event_hash": "7811e031822aa63864678d129d33524b0df1b81fe6db668d75dc44787f40e3cb",
+      "event_hash": "468a7a7348630437832f02700849de34676bd47642eb43f4af4a7ea3b3d33469"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-19T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-014-1-02",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-19T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-014-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0134",
+      "previous_event_hash": "468a7a7348630437832f02700849de34676bd47642eb43f4af4a7ea3b3d33469",
+      "event_hash": "8971473b45153521b740581403b2c55efd4d8023846ac2dc13565cce02035159"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-19T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-016",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0135",
+      "previous_event_hash": "8971473b45153521b740581403b2c55efd4d8023846ac2dc13565cce02035159",
+      "event_hash": "ddc9b2cdc289be2b426dbe6a2c2ed345c40e30782987d3d47537995683164364"
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-20T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "release_cleared",
+      "entity_id": "REL-014-1",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-001",
+          "model_version_ids": [
+            "MOD-001@2.1"
+          ],
+          "deployment_id": "DEP-001",
+          "region": "US-SYN-1",
+          "data_description": "Public/Internal nonsensitive manuals",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "verified_condition_ids": [
+          "CON-014-1-01",
+          "CON-014-1-02"
+        ]
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-014-v1",
+      "synthetic": true,
+      "event_id": "EVT-0136",
+      "previous_event_hash": "ddc9b2cdc289be2b426dbe6a2c2ed345c40e30782987d3d47537995683164364",
+      "event_hash": "eb9d492d9ac1390eb68ceefe3d9df3122833774b9064714ce3d28eee5062f9bc"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-20T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-016-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0137",
+      "previous_event_hash": "eb9d492d9ac1390eb68ceefe3d9df3122833774b9064714ce3d28eee5062f9bc",
+      "event_hash": "1b2ef29c81c715f7217f9377657c25d263501172dfc9d7000e692c3cdf134a4f"
+    },
+    {
+      "request_id": "REQ-017",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-20T09:00:00Z",
+      "actor_id": "ACT-015",
+      "action": "draft_created",
+      "entity_id": "REQ-017",
+      "details": {
+        "title": "Personal AI account for team notes"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-017-v1",
+      "synthetic": true,
+      "event_id": "EVT-0138",
+      "previous_event_hash": "1b2ef29c81c715f7217f9377657c25d263501172dfc9d7000e692c3cdf134a4f",
+      "event_hash": "0b8d8d783319addc4d64d22f1fa0d086dc069e990743b5eb37bdbd84e25ae5d8"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-20T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-016-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0139",
+      "previous_event_hash": "0b8d8d783319addc4d64d22f1fa0d086dc069e990743b5eb37bdbd84e25ae5d8",
+      "event_hash": "17a921c45b98bb08921eb1d0a64d7e5571e50444edc8070ab7088afea059de69"
+    },
+    {
+      "request_id": "REQ-017",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-20T10:00:00Z",
+      "actor_id": "ACT-015",
+      "action": "request_submitted",
+      "entity_id": "REQ-017",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-007",
+          "model_version_ids": [],
+          "deployment_id": "DEP-007",
+          "region": "US-SYN-1",
+          "data_description": "Internal team notes",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-017-v1",
+      "synthetic": true,
+      "event_id": "EVT-0140",
+      "previous_event_hash": "17a921c45b98bb08921eb1d0a64d7e5571e50444edc8070ab7088afea059de69",
+      "event_hash": "be032fe3a02a3f1955a63c615685e9739831620ff0884bab15f780bd37b18899"
+    },
+    {
+      "request_id": "REQ-017",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-20T11:00:00Z",
+      "actor_id": "ACT-023",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-017",
+      "details": {
+        "business_unit": "Operations"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-017-v1",
+      "synthetic": true,
+      "event_id": "EVT-0141",
+      "previous_event_hash": "be032fe3a02a3f1955a63c615685e9739831620ff0884bab15f780bd37b18899",
+      "event_hash": "507a9f387016dc6d8caa5021d072ad454d5e78a3a54630b547c972f1c2f20333"
+    },
+    {
+      "request_id": "REQ-017",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-20T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-017",
+      "details": {
+        "risk_tier": "Prohibited",
+        "required_reviews": [],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-017-v1",
+      "synthetic": true,
+      "event_id": "EVT-0142",
+      "previous_event_hash": "507a9f387016dc6d8caa5021d072ad454d5e78a3a54630b547c972f1c2f20333",
+      "event_hash": "a0b9ed0c7c4de6f0b8f6adefe8f8645e061291e25a8e1bf485a558009a3f7add"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-21T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-016-1-A",
+      "details": {
+        "disposition": "Approved",
+        "condition_ids": [
+          "CON-016-1-01",
+          "CON-016-1-02",
+          "CON-016-1-04"
+        ],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0143",
+      "previous_event_hash": "a0b9ed0c7c4de6f0b8f6adefe8f8645e061291e25a8e1bf485a558009a3f7add",
+      "event_hash": "959c5ba4732612296fefd0e9308f28cc69269e84e2438f017d3ad4f2702af155"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-21T09:00:00Z",
+      "actor_id": "ACT-017",
+      "action": "draft_created",
+      "entity_id": "REQ-018",
+      "details": {
+        "title": "Code evaluation cadence exception"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0144",
+      "previous_event_hash": "959c5ba4732612296fefd0e9308f28cc69269e84e2438f017d3ad4f2702af155",
+      "event_hash": "4c4553afb1d66f70785df75ebb6c81e6475f75416e40077ad01c7fb08f816503"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-21T10:00:00Z",
+      "actor_id": "ACT-017",
+      "action": "request_submitted",
+      "entity_id": "REQ-018",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-002",
+          "model_version_ids": [
+            "MOD-002@1.4"
+          ],
+          "deployment_id": "DEP-002",
+          "region": "US-SYN-1",
+          "data_description": "Confidential nonpersonal code; no changed data permissions",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0145",
+      "previous_event_hash": "4c4553afb1d66f70785df75ebb6c81e6475f75416e40077ad01c7fb08f816503",
+      "event_hash": "09aad5df999cc3cceacac1a635bfbe69c594e7c85550864fe3c7cd465da0f2a7"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-21T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-016-1-01",
+      "details": {
+        "condition_id": "CON-016-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0146",
+      "previous_event_hash": "09aad5df999cc3cceacac1a635bfbe69c594e7c85550864fe3c7cd465da0f2a7",
+      "event_hash": "0d017da775f62c5c121aa38e85caa2ca76b6980d5b6f0e568e0debf5195d5341"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-21T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-016-1-02",
+      "details": {
+        "condition_id": "CON-016-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0147",
+      "previous_event_hash": "0d017da775f62c5c121aa38e85caa2ca76b6980d5b6f0e568e0debf5195d5341",
+      "event_hash": "82deb066bfa63ce9c88b3c00b17a58e476cdd69abd6caba2bbcff26d5bb92978"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-21T11:00:00Z",
+      "actor_id": "ACT-024",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-018",
+      "details": {
+        "business_unit": "Engineering"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0148",
+      "previous_event_hash": "82deb066bfa63ce9c88b3c00b17a58e476cdd69abd6caba2bbcff26d5bb92978",
+      "event_hash": "8e090f95a4f493c6989c600ace61980827d45c45a9377fb210880a70cfbae0d7"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-21T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-016-1-01",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-21T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-016-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0149",
+      "previous_event_hash": "8e090f95a4f493c6989c600ace61980827d45c45a9377fb210880a70cfbae0d7",
+      "event_hash": "953fa550f7c10532ff703aca6b1da69f5cd3e010d07710d9717bf1fde1f194b0"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-21T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-016-1-02",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-21T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-016-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0150",
+      "previous_event_hash": "953fa550f7c10532ff703aca6b1da69f5cd3e010d07710d9717bf1fde1f194b0",
+      "event_hash": "15bb85c74845c3278fda9d5c6a21c71ef6cef2c1324cfe5bc620979d263ddf3d"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-21T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-018",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security",
+          "Engineering/Quality"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0151",
+      "previous_event_hash": "15bb85c74845c3278fda9d5c6a21c71ef6cef2c1324cfe5bc620979d263ddf3d",
+      "event_hash": "ad3617a2018629fbd1e6d02de4c53dcf664cfb145cfc3cd8b93e954df109f3cd"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-22T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "release_cleared",
+      "entity_id": "REL-016-1",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-010",
+          "region": "US-SYN-1",
+          "data_description": "Internal policies; case access restricted by assignment",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "verified_condition_ids": [
+          "CON-016-1-01",
+          "CON-016-1-02"
+        ]
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-016-v1",
+      "synthetic": true,
+      "event_id": "EVT-0152",
+      "previous_event_hash": "ad3617a2018629fbd1e6d02de4c53dcf664cfb145cfc3cd8b93e954df109f3cd",
+      "event_hash": "6e1a34fa02675cdf1151639a7f51a2893a2136836be9aaa33d79294de2a1b7f6"
+    },
+    {
+      "request_id": "REQ-017",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-22T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "proposal_rejected",
+      "entity_id": "DEC-017-1-A",
+      "details": {
+        "disposition": "Rejected",
+        "condition_ids": [],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-017-v1",
+      "synthetic": true,
+      "event_id": "EVT-0153",
+      "previous_event_hash": "6e1a34fa02675cdf1151639a7f51a2893a2136836be9aaa33d79294de2a1b7f6",
+      "event_hash": "64c8f3d115ccd58a605cddb398b2bbc89c91e385f79831495e3e2a99b192d10a"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-22T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-018-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0154",
+      "previous_event_hash": "64c8f3d115ccd58a605cddb398b2bbc89c91e385f79831495e3e2a99b192d10a",
+      "event_hash": "c637bf123ecbd340387828eccacb54183c1052338586a1eccd558335e90df76f"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-22T09:00:00Z",
+      "actor_id": "ACT-019",
+      "action": "draft_created",
+      "entity_id": "REQ-019",
+      "details": {
+        "title": "HR handbook RAG expansion"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0155",
+      "previous_event_hash": "c637bf123ecbd340387828eccacb54183c1052338586a1eccd558335e90df76f",
+      "event_hash": "7d6ee87c320a12cd78a0a2da3f7fa1f3813a15ae15aeeebec7bbb5a149a71fa7"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-22T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-018-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0156",
+      "previous_event_hash": "7d6ee87c320a12cd78a0a2da3f7fa1f3813a15ae15aeeebec7bbb5a149a71fa7",
+      "event_hash": "5baf90d6669bfef30eff1cb5a4f2744c76be06a130c31007cbad5a5a7cf34885"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-22T10:00:00Z",
+      "actor_id": "ACT-019",
+      "action": "request_submitted",
+      "entity_id": "REQ-019",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-010",
+          "region": "US-SYN-1",
+          "data_description": "Internal general handbook only",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0157",
+      "previous_event_hash": "5baf90d6669bfef30eff1cb5a4f2744c76be06a130c31007cbad5a5a7cf34885",
+      "event_hash": "7d22255b76faf76066ad687840e0f08f3093bfb199bd3540f619dd0baed71edf"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-22T11:00:00Z",
+      "actor_id": "ACT-014",
+      "action": "review_recorded",
+      "entity_id": "REV-018-1-03",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Engineering/Quality review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0158",
+      "previous_event_hash": "7d22255b76faf76066ad687840e0f08f3093bfb199bd3540f619dd0baed71edf",
+      "event_hash": "899f1544e970a07df1705008b61212dba88b5fd95e0f5f3b49a2510e95fb0093"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-22T11:00:00Z",
+      "actor_id": "ACT-026",
+      "action": "sponsor_endorsed",
+      "entity_id": "REQ-019",
+      "details": {
+        "business_unit": "People Technology"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0159",
+      "previous_event_hash": "899f1544e970a07df1705008b61212dba88b5fd95e0f5f3b49a2510e95fb0093",
+      "event_hash": "19b3e9247c63974fcf5db4a83a1dafeb1bf2f761dee05272f7525ef20932fc4e"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-22T12:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "routing_confirmed",
+      "entity_id": "REQ-019",
+      "details": {
+        "risk_tier": "Moderate",
+        "required_reviews": [
+          "Technology",
+          "Security"
+        ],
+        "routing_version": "AUTH-009@3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0160",
+      "previous_event_hash": "19b3e9247c63974fcf5db4a83a1dafeb1bf2f761dee05272f7525ef20932fc4e",
+      "event_hash": "156dca387841d3a02ec53b0a6353b1f58f3fe3316d7b433856944152146bd063"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-23T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-018-1-A",
+      "details": {
+        "disposition": "Approved with conditions",
+        "condition_ids": [
+          "CON-018-1-01",
+          "CON-018-1-02",
+          "CON-018-1-04"
+        ],
+        "valid_until": "2026-12-22T09:00:00Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0161",
+      "previous_event_hash": "156dca387841d3a02ec53b0a6353b1f58f3fe3316d7b433856944152146bd063",
+      "event_hash": "327cbece4ed6b3d8ed46e389b8f723c4f9bf35506bae0bd52869cd4748ac44e5"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-23T09:00:00Z",
+      "actor_id": "ACT-006",
+      "action": "review_recorded",
+      "entity_id": "REV-019-1-01",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Technology review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0162",
+      "previous_event_hash": "327cbece4ed6b3d8ed46e389b8f723c4f9bf35506bae0bd52869cd4748ac44e5",
+      "event_hash": "13294895c5272fa0e59ce33a011bcc86abdb8796102d24c33f48eaf74d0d84c9"
+    },
+    {
+      "request_id": "REQ-020",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-23T09:00:00Z",
+      "actor_id": "ACT-018",
+      "action": "draft_created",
+      "entity_id": "REQ-020",
+      "details": {
+        "title": "Supplier negotiation assistant"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-020-v1",
+      "synthetic": true,
+      "event_id": "EVT-0163",
+      "previous_event_hash": "13294895c5272fa0e59ce33a011bcc86abdb8796102d24c33f48eaf74d0d84c9",
+      "event_hash": "5e5f2d4542b8f00f93491b69d339249bd9a151936948eaab77ef45ff286d3bdc"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-23T10:00:00Z",
+      "actor_id": "ACT-005",
+      "action": "review_recorded",
+      "entity_id": "REV-019-1-02",
+      "details": {
+        "finding": "Satisfactory",
+        "rationale": "Security review satisfactory for the exact proposed scope; release conditions remain separate."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0164",
+      "previous_event_hash": "5e5f2d4542b8f00f93491b69d339249bd9a151936948eaab77ef45ff286d3bdc",
+      "event_hash": "6dbae99b3a5b3704b79840808faf590dd8947adc1b9878ccf5eede7d48c22db3"
+    },
+    {
+      "request_id": "REQ-020",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-23T10:00:00Z",
+      "actor_id": "ACT-018",
+      "action": "request_submitted",
+      "entity_id": "REQ-020",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-003",
+          "model_version_ids": [
+            "MOD-003@1.2"
+          ],
+          "deployment_id": "DEP-003",
+          "region": "US-SYN-1",
+          "data_description": "Proposed Confidential nonpersonal contracts",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "source_snapshot": "CORPUS-3.0"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-020-v1",
+      "synthetic": true,
+      "event_id": "EVT-0165",
+      "previous_event_hash": "6dbae99b3a5b3704b79840808faf590dd8947adc1b9878ccf5eede7d48c22db3",
+      "event_hash": "b2acb037c6be6588e2e22ec577b387f6ac762fd4202b22c69930b56d181dec46"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-23T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-018-1-01",
+      "details": {
+        "condition_id": "CON-018-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0166",
+      "previous_event_hash": "b2acb037c6be6588e2e22ec577b387f6ac762fd4202b22c69930b56d181dec46",
+      "event_hash": "9c8d9463e8c439186150177692bdbe1eb41e774bec04c7b58ad41ff6995c48b1"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-23T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-018-1-02",
+      "details": {
+        "condition_id": "CON-018-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0167",
+      "previous_event_hash": "9c8d9463e8c439186150177692bdbe1eb41e774bec04c7b58ad41ff6995c48b1",
+      "event_hash": "7cd39bdbb92be3e9953026b49f8cf8e9d9a6e35a5d45c53b9e0314a85d275d52"
+    },
+    {
+      "request_id": "REQ-020",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-23T11:00:00Z",
+      "actor_id": "ACT-028",
+      "action": "request_withdrawn",
+      "entity_id": "REQ-020",
+      "details": {
+        "reason": "Business sponsor withdrew the proposal."
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-020-v1",
+      "synthetic": true,
+      "event_id": "EVT-0168",
+      "previous_event_hash": "7cd39bdbb92be3e9953026b49f8cf8e9d9a6e35a5d45c53b9e0314a85d275d52",
+      "event_hash": "338f7a54bf5836117dbb2208bc08ddc90afffa39211b8ed014eaae0dc686a0af"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-23T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-018-1-01",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-23T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-018-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0169",
+      "previous_event_hash": "338f7a54bf5836117dbb2208bc08ddc90afffa39211b8ed014eaae0dc686a0af",
+      "event_hash": "d1bba3cb2103a41def7faca6d267e964a53a3f11c2b7b748a9d13e956d5c2b12"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-23T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-018-1-02",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-23T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-018-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0170",
+      "previous_event_hash": "d1bba3cb2103a41def7faca6d267e964a53a3f11c2b7b748a9d13e956d5c2b12",
+      "event_hash": "6e9028970d8cef45c034f98e8852a4331212cd0c741c3198f915e8121030dd35"
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-24T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "release_cleared",
+      "entity_id": "REL-018-1",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-002",
+          "model_version_ids": [
+            "MOD-002@1.4"
+          ],
+          "deployment_id": "DEP-002",
+          "region": "US-SYN-1",
+          "data_description": "Confidential nonpersonal code; no changed data permissions",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "verified_condition_ids": [
+          "CON-018-1-01",
+          "CON-018-1-02"
+        ]
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-018-v1",
+      "synthetic": true,
+      "event_id": "EVT-0171",
+      "previous_event_hash": "6e9028970d8cef45c034f98e8852a4331212cd0c741c3198f915e8121030dd35",
+      "event_hash": "fcf721a057d3e0be566fd1e4e2bc3c6ddc9ed7b71b13e1d99690670bc877b384"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-24T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_recorded",
+      "entity_id": "DEC-019-1-A",
+      "details": {
+        "disposition": "Approved",
+        "condition_ids": [
+          "CON-019-1-01",
+          "CON-019-1-02",
+          "CON-019-1-04"
+        ],
+        "valid_until": "2027-01-31T23:59:59Z"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0172",
+      "previous_event_hash": "fcf721a057d3e0be566fd1e4e2bc3c6ddc9ed7b71b13e1d99690670bc877b384",
+      "event_hash": "05e267e49bd9e4fab5d63ed3c376d55fbf6cd8ffbc45b6993e4ffe6602d2b87d"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-24T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-019-1-01",
+      "details": {
+        "condition_id": "CON-019-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0173",
+      "previous_event_hash": "05e267e49bd9e4fab5d63ed3c376d55fbf6cd8ffbc45b6993e4ffe6602d2b87d",
+      "event_hash": "97da812191b8e396911993048b335355259ed542e4dfd25e39a7b45883fab93b"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-24T11:00:00Z",
+      "actor_id": "ACT-010",
+      "action": "evidence_submitted",
+      "entity_id": "EVD-019-1-02",
+      "details": {
+        "condition_id": "CON-019-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0174",
+      "previous_event_hash": "97da812191b8e396911993048b335355259ed542e4dfd25e39a7b45883fab93b",
+      "event_hash": "34af7b9aea904ab60f49539e3a75b0bfd6bd22e001c6e6410eb2a77b178eda69"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-24T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-019-1-01",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-24T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-019-1-01",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0175",
+      "previous_event_hash": "34af7b9aea904ab60f49539e3a75b0bfd6bd22e001c6e6410eb2a77b178eda69",
+      "event_hash": "8af8b18be88ad60c994f7f72b667fc993f2c589d5a7262a8b63e28f02d168cec"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-24T12:00:00Z",
+      "actor_id": "ACT-011",
+      "action": "evidence_verified",
+      "entity_id": "CON-019-1-02",
+      "details": {
+        "verifier_actor_id": "ACT-011",
+        "verified_at": "2026-10-24T12:00:00Z",
+        "result": "accepted_fixture",
+        "reason": "Synthetic artifact matches the fictional case configuration.",
+        "evidence_id": "EVD-019-1-02",
+        "evidence_version": 1
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0176",
+      "previous_event_hash": "8af8b18be88ad60c994f7f72b667fc993f2c589d5a7262a8b63e28f02d168cec",
+      "event_hash": "e6463a79549111b314bcb89f0359df9c232e50caf049c0290c53ca17eb6e37f3"
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "occurred_at_utc": "2026-10-25T09:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "release_cleared",
+      "entity_id": "REL-019-1",
+      "details": {
+        "scope": {
+          "tool_id": "TOL-010",
+          "model_version_ids": [
+            "MOD-001@2.1",
+            "MOD-004@1.0"
+          ],
+          "deployment_id": "DEP-010",
+          "region": "US-SYN-1",
+          "data_description": "Internal general handbook only",
+          "personal_data_proposed": false,
+          "restricted_data_proposed": false,
+          "audience": "Authenticated employees",
+          "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+        },
+        "verified_condition_ids": [
+          "CON-019-1-01",
+          "CON-019-1-02"
+        ]
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-019-v1",
+      "synthetic": true,
+      "event_id": "EVT-0177",
+      "previous_event_hash": "e6463a79549111b314bcb89f0359df9c232e50caf049c0290c53ca17eb6e37f3",
+      "event_hash": "7a24d698804731fef9352ccbd98ba577688c7d9562bab8cba9f816f3b2c88fb3"
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "occurred_at_utc": "2026-11-01T00:00:00Z",
+      "actor_id": "ACT-003",
+      "action": "approval_expired",
+      "entity_id": "DEC-008-1-A",
+      "details": {
+        "valid_until": "2026-10-31T23:59:59Z",
+        "continuing_use": "blocked"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-008-v1",
+      "synthetic": true,
+      "event_id": "EVT-0178",
+      "previous_event_hash": "7a24d698804731fef9352ccbd98ba577688c7d9562bab8cba9f816f3b2c88fb3",
+      "event_hash": "63693bbf2de105703be4dc09ce5106e2f58acc3036d30ebf13d43c43910acfff"
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "occurred_at_utc": "2026-11-02T12:00:00Z",
+      "actor_id": "ACT-004",
+      "action": "approval_revoked",
+      "entity_id": "DEC-010-1-R",
+      "details": {
+        "reason": "Unapproved prompt logging was identified; deployment stopped pending Security investigation.",
+        "catalog_deployment": "DEP-012"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S08"
+      ],
+      "correlation_id": "REQ-010-v1",
+      "synthetic": true,
+      "event_id": "EVT-0179",
+      "previous_event_hash": "63693bbf2de105703be4dc09ce5106e2f58acc3036d30ebf13d43c43910acfff",
+      "event_hash": "d5124bfd4f4263321d4efbd80d089922192af8fecbf7a67fc38128ddb0e15743"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-11-06T10:00:00Z",
+      "actor_id": "ACT-012",
+      "action": "audit_case_viewed",
+      "entity_id": "REQ-002",
+      "details": {
+        "scope": "Assigned audit cases only",
+        "payload": "References and synthetic artifact versions; no live enterprise data"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S10"
+      ],
+      "correlation_id": "REQ-002-audit",
+      "synthetic": true,
+      "event_id": "EVT-0180",
+      "previous_event_hash": "d5124bfd4f4263321d4efbd80d089922192af8fecbf7a67fc38128ddb0e15743",
+      "event_hash": "715a8f9892455dbfbaa5d8b34b0b3773d9d544a34fd2ecc4d233dbfd2b2f7c87"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-11-06T10:00:00Z",
+      "actor_id": "ACT-012",
+      "action": "audit_case_viewed",
+      "entity_id": "REQ-004",
+      "details": {
+        "scope": "Assigned audit cases only",
+        "payload": "References and synthetic artifact versions; no live enterprise data"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S10"
+      ],
+      "correlation_id": "REQ-004-audit",
+      "synthetic": true,
+      "event_id": "EVT-0181",
+      "previous_event_hash": "715a8f9892455dbfbaa5d8b34b0b3773d9d544a34fd2ecc4d233dbfd2b2f7c87",
+      "event_hash": "e7bbafb41993add460252572c4dc92ad74e0b9505b268045e052b6977b405f57"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-11-06T10:00:00Z",
+      "actor_id": "ACT-012",
+      "action": "audit_case_viewed",
+      "entity_id": "REQ-016",
+      "details": {
+        "scope": "Assigned audit cases only",
+        "payload": "References and synthetic artifact versions; no live enterprise data"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S10"
+      ],
+      "correlation_id": "REQ-016-audit",
+      "synthetic": true,
+      "event_id": "EVT-0182",
+      "previous_event_hash": "e7bbafb41993add460252572c4dc92ad74e0b9505b268045e052b6977b405f57",
+      "event_hash": "1f79cd22478c73ef63897d457c6908a44ed15739b1eb342d23afe08eb7775368"
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "occurred_at_utc": "2026-11-06T11:00:00Z",
+      "actor_id": "ACT-012",
+      "action": "authorized_evidence_exported",
+      "entity_id": "REQ-002",
+      "details": {
+        "scope": "Assigned audit cases only",
+        "payload": "References and synthetic artifact versions; no live enterprise data"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S10"
+      ],
+      "correlation_id": "REQ-002-audit",
+      "synthetic": true,
+      "event_id": "EVT-0183",
+      "previous_event_hash": "1f79cd22478c73ef63897d457c6908a44ed15739b1eb342d23afe08eb7775368",
+      "event_hash": "90726d6d561d64caabd1247c9751188a9c00e4b346431451e4d968c823edd15d"
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "occurred_at_utc": "2026-11-06T11:00:00Z",
+      "actor_id": "ACT-012",
+      "action": "authorized_evidence_exported",
+      "entity_id": "REQ-004",
+      "details": {
+        "scope": "Assigned audit cases only",
+        "payload": "References and synthetic artifact versions; no live enterprise data"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S10"
+      ],
+      "correlation_id": "REQ-004-audit",
+      "synthetic": true,
+      "event_id": "EVT-0184",
+      "previous_event_hash": "90726d6d561d64caabd1247c9751188a9c00e4b346431451e4d968c823edd15d",
+      "event_hash": "4000f127e1953bc075925a26746b5c16f343f1b68b8309a87d1279a5b64dee96"
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "occurred_at_utc": "2026-11-06T11:00:00Z",
+      "actor_id": "ACT-012",
+      "action": "authorized_evidence_exported",
+      "entity_id": "REQ-016",
+      "details": {
+        "scope": "Assigned audit cases only",
+        "payload": "References and synthetic artifact versions; no live enterprise data"
+      },
+      "source_citations": [
+        "AUTH-009@3.0:S10"
+      ],
+      "correlation_id": "REQ-016-audit",
+      "synthetic": true,
+      "event_id": "EVT-0185",
+      "previous_event_hash": "4000f127e1953bc075925a26746b5c16f343f1b68b8309a87d1279a5b64dee96",
+      "event_hash": "d6477b5488fd2360905a4e8f58dd11762c341701f406cfe5cc0a9a48900e2c84"
+    }
+  ]
+}

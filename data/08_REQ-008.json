@@ -1,0 +1,1870 @@
+{
+  "metadata": {
+    "source_number": 8,
+    "source_id": "REQ-008",
+    "title": "AI Use Case & Request Register",
+    "version": "3.0",
+    "synthetic": true,
+    "snapshot_at": "2026-11-08T00:00:00Z",
+    "access": "case-assignment restricted",
+    "owner": "Governance Operations",
+    "language": "en",
+    "effective_from": "2026-10-01"
+  },
+  "actors": [
+    {
+      "actor_id": "ACT-001",
+      "name": "Maya Chen",
+      "role": "Requester",
+      "email": "act-001@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-002",
+      "name": "Jordan Ellis",
+      "role": "Business Sponsor",
+      "email": "act-002@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-003",
+      "name": "Owen Brooks",
+      "role": "Governance Coordinator",
+      "email": "act-003@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-004",
+      "name": "Alex Morgan",
+      "role": "Governance Decision Owner",
+      "email": "act-004@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-005",
+      "name": "Priya Shah",
+      "role": "Security Reviewer",
+      "email": "act-005@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-006",
+      "name": "Noah Patel",
+      "role": "Technology Reviewer",
+      "email": "act-006@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-007",
+      "name": "Elena Voss",
+      "role": "Legal Reviewer",
+      "email": "act-007@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-008",
+      "name": "Marcus Reed",
+      "role": "Compliance/Risk Reviewer",
+      "email": "act-008@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-009",
+      "name": "Anika Rao",
+      "role": "Privacy Reviewer",
+      "email": "act-009@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-010",
+      "name": "Sam Rivera",
+      "role": "Evidence Owner",
+      "email": "act-010@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-011",
+      "name": "Taylor Quinn",
+      "role": "Independent Verifier",
+      "email": "act-011@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-012",
+      "name": "Casey Reed",
+      "role": "Auditor",
+      "email": "act-012@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-013",
+      "name": "Riley Park",
+      "role": "Catalog Administrator",
+      "email": "act-013@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-014",
+      "name": "Devon Lee",
+      "role": "Engineering/Quality Policy Owner",
+      "email": "act-014@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-015",
+      "name": "Evan Brooks",
+      "role": "Warehouse Requester",
+      "email": "act-015@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-016",
+      "name": "Avery Lane",
+      "role": "Finance Requester",
+      "email": "act-016@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-017",
+      "name": "Morgan Lee",
+      "role": "Engineering Requester",
+      "email": "act-017@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-018",
+      "name": "Robin Diaz",
+      "role": "Procurement Requester",
+      "email": "act-018@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-019",
+      "name": "Lena Ortiz",
+      "role": "People Technology Requester",
+      "email": "act-019@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-020",
+      "name": "Sofia Park",
+      "role": "Marketing Requester",
+      "email": "act-020@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-021",
+      "name": "Jules Bennett",
+      "role": "Sales Requester",
+      "email": "act-021@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-022",
+      "name": "Imani Cole",
+      "role": "AI Platform Requester",
+      "email": "act-022@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-023",
+      "name": "Tessa Grant",
+      "role": "Warehouse Sponsor",
+      "email": "act-023@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-024",
+      "name": "Arjun Mehta",
+      "role": "Technology Sponsor",
+      "email": "act-024@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-025",
+      "name": "Theo Marsh",
+      "role": "Finance Sponsor",
+      "email": "act-025@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-026",
+      "name": "Amelia Ross",
+      "role": "People Sponsor",
+      "email": "act-026@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-027",
+      "name": "Nia Evans",
+      "role": "Sales Sponsor",
+      "email": "act-027@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-028",
+      "name": "Hugo Silva",
+      "role": "Procurement Sponsor",
+      "email": "act-028@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-029",
+      "name": "Iris Bell",
+      "role": "Marketing Sponsor",
+      "email": "act-029@northstar.example",
+      "synthetic": true
+    },
+    {
+      "actor_id": "ACT-030",
+      "name": "Cameron Wells",
+      "role": "Audit Sponsor",
+      "email": "act-030@northstar.example",
+      "synthetic": true
+    }
+  ],
+  "requests": [
+    {
+      "request_id": "REQ-001",
+      "current_version": 1,
+      "title": "Customer support RAG assistant",
+      "business_unit": "Customer Operations",
+      "purpose": "Answer product support questions from published manuals and sanitized Internal articles with human handoff.",
+      "requester_actor_id": "ACT-001",
+      "sponsor_actor_id": "ACT-002",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-009",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-009",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal; no customer transcripts",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Customers",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "High",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R02"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security",
+        "Legal",
+        "Compliance/Risk"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Approved with conditions",
+      "release_readiness": "Blocked",
+      "next_action": "Provide and independently verify outstanding pre-release evidence; no release clearance.",
+      "created_at": "2026-10-04T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S02"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-001",
+        "ACT-002",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005",
+        "ACT-007",
+        "ACT-008"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-04T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-002",
+      "current_version": 1,
+      "title": "Employee policy knowledge assistant",
+      "business_unit": "People Technology",
+      "purpose": "Answer general employee policy questions with source ACL enforcement; exclude individual employee records.",
+      "requester_actor_id": "ACT-019",
+      "sponsor_actor_id": "ACT-026",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-010",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal policy documents",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Approved",
+      "release_readiness": "Cleared",
+      "next_action": "Continue only within scoped deployment and satisfy ongoing monitoring.",
+      "created_at": "2026-10-05T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-019",
+        "ACT-026",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005",
+        "ACT-012"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-05T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-003",
+      "current_version": 1,
+      "title": "Procurement contract intake extension",
+      "business_unit": "Procurement",
+      "purpose": "Summarize supplier terms; current intake has not established whether personal contacts remain.",
+      "requester_actor_id": "ACT-018",
+      "sponsor_actor_id": "ACT-028",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-003",
+        "model_version_ids": [
+          "MOD-003@1.2"
+        ],
+        "deployment_id": "DEP-003",
+        "region": "US-SYN-1",
+        "data_description": "Classification unresolved; may contain personal contacts",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security",
+        "Legal"
+      ],
+      "lifecycle": "Awaiting information",
+      "approval_disposition": "Pending",
+      "release_readiness": "Blocked",
+      "next_action": "Requester must establish data classification and remove personal contacts.",
+      "created_at": "2026-10-06T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-018",
+        "ACT-028",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005",
+        "ACT-007"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": {
+        "field": "data classification and personal-contact treatment",
+        "owner_actor_id": "ACT-001",
+        "requested_at": "2026-10-07T09:00:00Z"
+      },
+      "current_version_created_at": "2026-10-06T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-004",
+      "current_version": 1,
+      "title": "CodeForge pull-request assistant",
+      "business_unit": "Engineering",
+      "purpose": "Suggest code improvements without secrets; keep human review and required tests before merge.",
+      "requester_actor_id": "ACT-017",
+      "sponsor_actor_id": "ACT-024",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-002",
+        "model_version_ids": [
+          "MOD-002@1.4"
+        ],
+        "deployment_id": "DEP-002",
+        "region": "US-SYN-1",
+        "data_description": "Confidential nonpersonal source code",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Approved with conditions",
+      "release_readiness": "Cleared",
+      "next_action": "Maintain ongoing conditions; reassess any material change.",
+      "created_at": "2026-10-07T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-017",
+        "ACT-024",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005",
+        "ACT-012"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-07T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-005",
+      "current_version": 1,
+      "title": "Customer meeting summary pilot",
+      "business_unit": "Sales Enablement",
+      "purpose": "Summarize raw customer notes containing names and email addresses.",
+      "requester_actor_id": "ACT-021",
+      "sponsor_actor_id": "ACT-027",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-005",
+        "model_version_ids": [
+          "MOD-001@2.1"
+        ],
+        "deployment_id": "DEP-005",
+        "region": "US-SYN-1",
+        "data_description": "Confidential personal",
+        "personal_data_proposed": true,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03",
+        "R04"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security",
+        "Privacy"
+      ],
+      "lifecycle": "Under review",
+      "approval_disposition": "Pending",
+      "release_readiness": "Blocked",
+      "next_action": "Remove raw personal data and resubmit scope; Privacy cannot override catalog restrictions.",
+      "created_at": "2026-10-08T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-021",
+        "ACT-027",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005",
+        "ACT-009"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-08T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-006",
+      "current_version": 1,
+      "title": "Inventory image investigation",
+      "business_unit": "Warehouse Operations",
+      "purpose": "Explore images of stock without people, labels or secrets; proposed tool is under review.",
+      "requester_actor_id": "ACT-015",
+      "sponsor_actor_id": "ACT-023",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-008",
+        "model_version_ids": [
+          "MOD-006@0.9"
+        ],
+        "deployment_id": "DEP-008",
+        "region": "US-SYN-1",
+        "data_description": "Internal images; classification not yet confirmed",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": false,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Draft",
+      "approval_disposition": "Pending",
+      "release_readiness": "Not assessed",
+      "next_action": "Complete intake; proposed deployment remains unavailable.",
+      "created_at": "2026-10-09T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-015",
+        "ACT-023",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005"
+      ],
+      "sponsor_endorsed": false,
+      "information_request": null,
+      "current_version_created_at": "2026-10-09T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-007",
+      "current_version": 1,
+      "title": "Autonomous hiring shortlist",
+      "business_unit": "People Operations",
+      "purpose": "Rank candidates and select a shortlist without human decision review using performance records.",
+      "requester_actor_id": "ACT-019",
+      "sponsor_actor_id": "ACT-026",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-001",
+        "model_version_ids": [
+          "MOD-001@2.1"
+        ],
+        "deployment_id": "DEP-001",
+        "region": "US-SYN-1",
+        "data_description": "Restricted HR performance records",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": true,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Prohibited",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R05"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [],
+      "lifecycle": "Closed",
+      "approval_disposition": "Rejected",
+      "release_readiness": "Blocked",
+      "next_action": "Do not proceed with this prohibited proposal.",
+      "created_at": "2026-10-10T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S05"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-019",
+        "ACT-026",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-10T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-008",
+      "current_version": 1,
+      "title": "Policy assistant authorization renewal",
+      "business_unit": "People Technology",
+      "purpose": "Continue the previous internal policy RAG scope after its time-limited approval.",
+      "requester_actor_id": "ACT-019",
+      "sponsor_actor_id": "ACT-026",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-010",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal policy documents",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Expired",
+      "release_readiness": "Blocked",
+      "next_action": "Stop scoped use and obtain renewed authorization.",
+      "created_at": "2026-10-11T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-019",
+        "ACT-026",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-11T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-009",
+      "current_version": 2,
+      "title": "Embedding migration to Vector Pine 1.1",
+      "business_unit": "AI Platform",
+      "purpose": "Change the retrieval embedding version and candidate index while retaining the generation model.",
+      "requester_actor_id": "ACT-022",
+      "sponsor_actor_id": "ACT-024",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-008@1.1"
+        ],
+        "deployment_id": "DEP-011",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal policy corpus",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03",
+        "R06"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Submitted",
+      "approval_disposition": "Pending",
+      "release_readiness": "Blocked",
+      "next_action": "Reassess v2; v1 authorization is limited to the old configuration.",
+      "created_at": "2026-10-05T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-022",
+        "ACT-024",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-12T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-010",
+      "current_version": 1,
+      "title": "Legacy support assistant incident",
+      "business_unit": "Customer Operations",
+      "purpose": "Legacy chatbot deployment stopped after unapproved prompt logging was discovered.",
+      "requester_actor_id": "ACT-001",
+      "sponsor_actor_id": "ACT-002",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-009",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-012",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal intended scope; incident investigation",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Customers",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "High",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R02"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security",
+        "Legal",
+        "Compliance/Risk"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Revoked",
+      "release_readiness": "Blocked",
+      "next_action": "Keep deployment stopped; follow Security incident investigation.",
+      "created_at": "2026-10-13T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S02"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-001",
+        "ACT-002",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005",
+        "ACT-007",
+        "ACT-008"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-13T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-011",
+      "current_version": 1,
+      "title": "Aggregate weekly sales analysis",
+      "business_unit": "Finance",
+      "purpose": "Analyze regional aggregates without row-level customers or small-group personal identifiers.",
+      "requester_actor_id": "ACT-016",
+      "sponsor_actor_id": "ACT-025",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-004",
+        "model_version_ids": [
+          "MOD-001@2.1"
+        ],
+        "deployment_id": "DEP-004",
+        "region": "US-SYN-1",
+        "data_description": "Internal aggregate sales",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Approved",
+      "release_readiness": "Cleared",
+      "next_action": "Continue only within scoped deployment and satisfy ongoing monitoring.",
+      "created_at": "2026-10-14T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-016",
+        "ACT-025",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-14T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-012",
+      "current_version": 1,
+      "title": "Public campaign drafting workflow",
+      "business_unit": "Marketing",
+      "purpose": "Draft public product launch copy from approved public facts; reviewers check claims before publication.",
+      "requester_actor_id": "ACT-020",
+      "sponsor_actor_id": "ACT-029",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-001",
+        "model_version_ids": [
+          "MOD-001@2.1"
+        ],
+        "deployment_id": "DEP-001",
+        "region": "US-SYN-1",
+        "data_description": "Public approved product information",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Approved",
+      "release_readiness": "Cleared",
+      "next_action": "Continue only within scoped deployment and satisfy ongoing monitoring.",
+      "created_at": "2026-10-15T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-020",
+        "ACT-029",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-15T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-013",
+      "current_version": 1,
+      "title": "Policy RAG reranker experiment",
+      "business_unit": "AI Quality",
+      "purpose": "Evaluate Rank Cedar in a named Internal-only pilot without customer production traffic.",
+      "requester_actor_id": "ACT-022",
+      "sponsor_actor_id": "ACT-024",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0",
+          "MOD-005@1.0"
+        ],
+        "deployment_id": "DEP-013",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal synthetic policy questions",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Approved with conditions",
+      "release_readiness": "Blocked",
+      "next_action": "Provide and independently verify outstanding pre-release evidence; no release clearance.",
+      "created_at": "2026-10-16T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-022",
+        "ACT-024",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-16T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-014",
+      "current_version": 1,
+      "title": "Maintenance SOP drafting assistant",
+      "business_unit": "Warehouse Reliability",
+      "purpose": "Draft equipment-maintenance instructions from nonsensitive manuals; engineers approve instructions before use.",
+      "requester_actor_id": "ACT-015",
+      "sponsor_actor_id": "ACT-023",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-001",
+        "model_version_ids": [
+          "MOD-001@2.1"
+        ],
+        "deployment_id": "DEP-001",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal nonsensitive manuals",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Approved",
+      "release_readiness": "Cleared",
+      "next_action": "Continue only within scoped deployment and satisfy ongoing monitoring.",
+      "created_at": "2026-10-17T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-015",
+        "ACT-023",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-17T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-015",
+      "current_version": 1,
+      "title": "Thermal inspection image assistant",
+      "business_unit": "Warehouse Reliability",
+      "purpose": "Explore interpretation of equipment thermal images; exclude people, serial labels and site secrets.",
+      "requester_actor_id": "ACT-015",
+      "sponsor_actor_id": "ACT-023",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-008",
+        "model_version_ids": [
+          "MOD-006@0.9"
+        ],
+        "deployment_id": "DEP-008",
+        "region": "US-SYN-1",
+        "data_description": "Internal proposed images",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": false,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Draft",
+      "approval_disposition": "Pending",
+      "release_readiness": "Not assessed",
+      "next_action": "Complete intake; proposed deployment remains unavailable.",
+      "created_at": "2026-10-18T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-015",
+        "ACT-023",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005"
+      ],
+      "sponsor_endorsed": false,
+      "information_request": null,
+      "current_version_created_at": "2026-10-18T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-016",
+      "current_version": 1,
+      "title": "Audit policy evidence assistant",
+      "business_unit": "Internal Audit",
+      "purpose": "Retrieve policies for scoped audit cases; enforce case and source permissions separately.",
+      "requester_actor_id": "ACT-012",
+      "sponsor_actor_id": "ACT-030",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-010",
+        "region": "US-SYN-1",
+        "data_description": "Internal policies; case access restricted by assignment",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Approved",
+      "release_readiness": "Cleared",
+      "next_action": "Continue only within scoped deployment and satisfy ongoing monitoring.",
+      "created_at": "2026-10-19T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-012",
+        "ACT-030",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-19T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-017",
+      "current_version": 1,
+      "title": "Personal AI account for team notes",
+      "business_unit": "Operations",
+      "purpose": "Use a personal consumer account to summarize Internal agendas.",
+      "requester_actor_id": "ACT-015",
+      "sponsor_actor_id": "ACT-023",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-007",
+        "model_version_ids": [],
+        "deployment_id": "DEP-007",
+        "region": "US-SYN-1",
+        "data_description": "Internal team notes",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Prohibited",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R05"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [],
+      "lifecycle": "Closed",
+      "approval_disposition": "Rejected",
+      "release_readiness": "Blocked",
+      "next_action": "Do not proceed with this prohibited proposal.",
+      "created_at": "2026-10-20T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S05"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-015",
+        "ACT-023",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-20T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-018",
+      "current_version": 1,
+      "title": "Code evaluation cadence exception",
+      "business_unit": "Engineering",
+      "purpose": "Temporarily change an ongoing weekly benchmark cadence to monthly for 60 days; preserve code review, security testing and all data prohibitions.",
+      "requester_actor_id": "ACT-017",
+      "sponsor_actor_id": "ACT-024",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-002",
+        "model_version_ids": [
+          "MOD-002@1.4"
+        ],
+        "deployment_id": "DEP-002",
+        "region": "US-SYN-1",
+        "data_description": "Confidential nonpersonal code; no changed data permissions",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03",
+        "R07"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security",
+        "Engineering/Quality"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Approved with conditions",
+      "release_readiness": "Cleared",
+      "next_action": "Observe the 60-day exception expiry; no changes to code review or data prohibitions.",
+      "created_at": "2026-10-21T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-017",
+        "ACT-024",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005",
+        "ACT-014"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "exception": {
+        "duration_days": 60,
+        "requirement": "Ongoing benchmark cadence for code-assistance deployment",
+        "compensating_controls": "Normal code review and security tests remain mandatory; manual issue review continues weekly.",
+        "affected_policy_owner_actor_id": "ACT-014",
+        "absolute_prohibitions_unchanged": true
+      },
+      "current_version_created_at": "2026-10-21T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-019",
+      "current_version": 1,
+      "title": "HR handbook RAG expansion",
+      "business_unit": "People Technology",
+      "purpose": "Add general HR handbook pages while excluding employee performance, health and individual case files.",
+      "requester_actor_id": "ACT-019",
+      "sponsor_actor_id": "ACT-026",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-010",
+        "region": "US-SYN-1",
+        "data_description": "Internal general handbook only",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security"
+      ],
+      "lifecycle": "Closed",
+      "approval_disposition": "Approved",
+      "release_readiness": "Cleared",
+      "next_action": "Continue only within scoped deployment and satisfy ongoing monitoring.",
+      "created_at": "2026-10-22T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-019",
+        "ACT-026",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005"
+      ],
+      "sponsor_endorsed": true,
+      "information_request": null,
+      "current_version_created_at": "2026-10-22T09:00:00Z"
+    },
+    {
+      "request_id": "REQ-020",
+      "current_version": 1,
+      "title": "Supplier negotiation assistant",
+      "business_unit": "Procurement",
+      "purpose": "Proposed contract drafting integration withdrawn by the sponsor before formal review.",
+      "requester_actor_id": "ACT-018",
+      "sponsor_actor_id": "ACT-028",
+      "coordinator_actor_id": "ACT-003",
+      "decision_owner_actor_id": "ACT-004",
+      "scope": {
+        "tool_id": "TOL-003",
+        "model_version_ids": [
+          "MOD-003@1.2"
+        ],
+        "deployment_id": "DEP-003",
+        "region": "US-SYN-1",
+        "data_description": "Proposed Confidential nonpersonal contracts",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "risk_screening": "Moderate",
+      "screening_confirmed": true,
+      "routing_rule_ids": [
+        "R03"
+      ],
+      "routing_version": "AUTH-009@3.0",
+      "required_review_domains": [
+        "Technology",
+        "Security",
+        "Legal"
+      ],
+      "lifecycle": "Withdrawn",
+      "approval_disposition": "Pending",
+      "release_readiness": "Blocked",
+      "next_action": "No further action unless a new proposal is submitted.",
+      "created_at": "2026-10-23T09:00:00Z",
+      "source_citations": [
+        "POL-001@3.0:S01",
+        "AUTH-009@3.0:S03"
+      ],
+      "visible_to_actor_ids": [
+        "ACT-018",
+        "ACT-028",
+        "ACT-003",
+        "ACT-004",
+        "ACT-010",
+        "ACT-011",
+        "ACT-006",
+        "ACT-005",
+        "ACT-007"
+      ],
+      "sponsor_endorsed": false,
+      "information_request": null,
+      "current_version_created_at": "2026-10-23T09:00:00Z"
+    }
+  ],
+  "submitted_snapshots": [
+    {
+      "request_id": "REQ-001",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-009",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-009",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal; no customer transcripts",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Customers",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Answer product support questions from published manuals and sanitized Internal articles with human handoff.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-04T09:00:00Z",
+      "submitted_at": "2026-10-04T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-002",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-010",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal policy documents",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Answer general employee policy questions with source ACL enforcement; exclude individual employee records.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-05T09:00:00Z",
+      "submitted_at": "2026-10-05T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-003",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-003",
+        "model_version_ids": [
+          "MOD-003@1.2"
+        ],
+        "deployment_id": "DEP-003",
+        "region": "US-SYN-1",
+        "data_description": "Classification unresolved; may contain personal contacts",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Summarize supplier terms; current intake has not established whether personal contacts remain.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-06T09:00:00Z",
+      "submitted_at": "2026-10-06T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-004",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-002",
+        "model_version_ids": [
+          "MOD-002@1.4"
+        ],
+        "deployment_id": "DEP-002",
+        "region": "US-SYN-1",
+        "data_description": "Confidential nonpersonal source code",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Suggest code improvements without secrets; keep human review and required tests before merge.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-07T09:00:00Z",
+      "submitted_at": "2026-10-07T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-005",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-005",
+        "model_version_ids": [
+          "MOD-001@2.1"
+        ],
+        "deployment_id": "DEP-005",
+        "region": "US-SYN-1",
+        "data_description": "Confidential personal",
+        "personal_data_proposed": true,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Summarize raw customer notes containing names and email addresses.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-08T09:00:00Z",
+      "submitted_at": "2026-10-08T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-006",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-008",
+        "model_version_ids": [
+          "MOD-006@0.9"
+        ],
+        "deployment_id": "DEP-008",
+        "region": "US-SYN-1",
+        "data_description": "Internal images; classification not yet confirmed",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Explore images of stock without people, labels or secrets; proposed tool is under review.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-09T09:00:00Z",
+      "submitted_at": null,
+      "immutable_after_submission": false,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-007",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-001",
+        "model_version_ids": [
+          "MOD-001@2.1"
+        ],
+        "deployment_id": "DEP-001",
+        "region": "US-SYN-1",
+        "data_description": "Restricted HR performance records",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": true,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Rank candidates and select a shortlist without human decision review using performance records.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-10T09:00:00Z",
+      "submitted_at": "2026-10-10T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-008",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-010",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal policy documents",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Continue the previous internal policy RAG scope after its time-limited approval.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-11T09:00:00Z",
+      "submitted_at": "2026-10-11T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-009",
+      "request_version": 2,
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-008@1.1"
+        ],
+        "deployment_id": "DEP-011",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal policy corpus",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Change the retrieval embedding version and candidate index while retaining the generation model.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-12T09:00:00Z",
+      "submitted_at": "2026-10-12T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": 1
+    },
+    {
+      "request_id": "REQ-009",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-010",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal policy corpus",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Existing internal policy assistant configuration",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-05T09:00:00Z",
+      "submitted_at": "2026-10-05T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-010",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-009",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-012",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal intended scope; incident investigation",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Customers",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Legacy chatbot deployment stopped after unapproved prompt logging was discovered.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-13T09:00:00Z",
+      "submitted_at": "2026-10-13T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-011",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-004",
+        "model_version_ids": [
+          "MOD-001@2.1"
+        ],
+        "deployment_id": "DEP-004",
+        "region": "US-SYN-1",
+        "data_description": "Internal aggregate sales",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Analyze regional aggregates without row-level customers or small-group personal identifiers.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-14T09:00:00Z",
+      "submitted_at": "2026-10-14T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-012",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-001",
+        "model_version_ids": [
+          "MOD-001@2.1"
+        ],
+        "deployment_id": "DEP-001",
+        "region": "US-SYN-1",
+        "data_description": "Public approved product information",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Draft public product launch copy from approved public facts; reviewers check claims before publication.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-15T09:00:00Z",
+      "submitted_at": "2026-10-15T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-013",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0",
+          "MOD-005@1.0"
+        ],
+        "deployment_id": "DEP-013",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal synthetic policy questions",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Evaluate Rank Cedar in a named Internal-only pilot without customer production traffic.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-16T09:00:00Z",
+      "submitted_at": "2026-10-16T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-014",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-001",
+        "model_version_ids": [
+          "MOD-001@2.1"
+        ],
+        "deployment_id": "DEP-001",
+        "region": "US-SYN-1",
+        "data_description": "Public/Internal nonsensitive manuals",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Draft equipment-maintenance instructions from nonsensitive manuals; engineers approve instructions before use.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-17T09:00:00Z",
+      "submitted_at": "2026-10-17T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-015",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-008",
+        "model_version_ids": [
+          "MOD-006@0.9"
+        ],
+        "deployment_id": "DEP-008",
+        "region": "US-SYN-1",
+        "data_description": "Internal proposed images",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Explore interpretation of equipment thermal images; exclude people, serial labels and site secrets.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-18T09:00:00Z",
+      "submitted_at": null,
+      "immutable_after_submission": false,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-016",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-010",
+        "region": "US-SYN-1",
+        "data_description": "Internal policies; case access restricted by assignment",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Retrieve policies for scoped audit cases; enforce case and source permissions separately.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-19T09:00:00Z",
+      "submitted_at": "2026-10-19T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-017",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-007",
+        "model_version_ids": [],
+        "deployment_id": "DEP-007",
+        "region": "US-SYN-1",
+        "data_description": "Internal team notes",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Use a personal consumer account to summarize Internal agendas.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-20T09:00:00Z",
+      "submitted_at": "2026-10-20T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-018",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-002",
+        "model_version_ids": [
+          "MOD-002@1.4"
+        ],
+        "deployment_id": "DEP-002",
+        "region": "US-SYN-1",
+        "data_description": "Confidential nonpersonal code; no changed data permissions",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Temporarily change an ongoing weekly benchmark cadence to monthly for 60 days; preserve code review, security testing and all data prohibitions.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-21T09:00:00Z",
+      "submitted_at": "2026-10-21T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-019",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-010",
+        "model_version_ids": [
+          "MOD-001@2.1",
+          "MOD-004@1.0"
+        ],
+        "deployment_id": "DEP-010",
+        "region": "US-SYN-1",
+        "data_description": "Internal general handbook only",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Add general HR handbook pages while excluding employee performance, health and individual case files.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-22T09:00:00Z",
+      "submitted_at": "2026-10-22T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    },
+    {
+      "request_id": "REQ-020",
+      "request_version": 1,
+      "scope": {
+        "tool_id": "TOL-003",
+        "model_version_ids": [
+          "MOD-003@1.2"
+        ],
+        "deployment_id": "DEP-003",
+        "region": "US-SYN-1",
+        "data_description": "Proposed Confidential nonpersonal contracts",
+        "personal_data_proposed": false,
+        "restricted_data_proposed": false,
+        "audience": "Authenticated employees",
+        "human_oversight": "Named competent employee reviews outputs; custom applications provide human handoff."
+      },
+      "purpose": "Proposed contract drafting integration withdrawn by the sponsor before formal review.",
+      "source_snapshot": "CORPUS-3.0",
+      "created_at": "2026-10-23T09:00:00Z",
+      "submitted_at": "2026-10-23T10:00:00Z",
+      "immutable_after_submission": true,
+      "supersedes_version": null
+    }
+  ]
+}

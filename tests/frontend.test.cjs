@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict');const {JSDOM,VirtualConsole}=require('jsdom');const crypto=require('node:crypto');
+const errors=[];const vc=new VirtualConsole();vc.on('jsdomError',e=>{if(!e.message.includes('Could not parse CSS'))errors.push(e.message)});
+const pause=ms=>new Promise(r=>setTimeout(r,ms));
+async function wait(fn){for(let i=0;i<150;i++){if(fn())return;await pause(100)}throw new Error('Timed out waiting for UI')}
+(async()=>{const dom=await JSDOM.fromURL('http://127.0.0.1:8600',{resources:'usable',runScripts:'dangerously',pretendToBeVisual:true,virtualConsole:vc,beforeParse(w){w.scrollTo=()=>{};w.fetch=(url,opts)=>fetch(new URL(url,'http://127.0.0.1:8600'),opts);w.crypto.randomUUID=crypto.randomUUID}});const w=dom.window,d=w.document;
+await wait(()=>d.querySelector('#persona').options.length===30);
+assert(d.querySelector('header .headerRight #persona'));assert(!d.querySelector('aside #persona'));assert(d.querySelector('.hero h1').textContent.includes('Clarity'));
+for(const id of ['home','ask','catalog','sources','requests','case','review','decision','evidence','audit','journeys','evals','blueprint']){d.querySelector(`nav [data-go="${id}"]`).click();await pause(30);assert(d.querySelector('#main').textContent.trim().length>50,id)}
+d.querySelector('nav [data-go="ask"]').click();await pause(30);d.querySelector('#question').value='Which tool can I use for coding?';d.querySelector('#askForm').dispatchEvent(new w.Event('submit',{bubbles:true,cancelable:true}));await wait(()=>d.querySelectorAll('[data-evidence]').length>0);assert(d.querySelector('.answer').textContent.includes('Policy evidence'));
+d.querySelector('#persona').value='ACT-013';d.querySelector('#persona').dispatchEvent(new w.Event('change',{bubbles:true}));await wait(()=>d.querySelector('.avatar').textContent==='RM'||w.eval('W.actor.actor_id')==='ACT-013');d.querySelector('nav [data-go="sources"]').click();await pause(30);assert(d.querySelector('#uploadForm'));
+assert.deepEqual(errors,[]);console.log('PASS: 13 pages, top-right persona placement, real guidance API, persona scope, upload permissions; no JavaScript errors.');dom.window.close()})().catch(e=>{console.error(e);process.exit(1)});
