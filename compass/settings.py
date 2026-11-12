@@ -19,6 +19,7 @@ class Settings:
     embedding_model: str = "text-embedding-3-small"
     judge_model: str = "gpt-5.5-2026-04-23"
     remote_tracing: bool = False
+    auth_mode: str = "demo"
 
     @property
     def data_dir(self): return self.root / "data"
@@ -44,4 +45,5 @@ class Settings:
                    chat_model=os.getenv("COMPASS_CHAT_MODEL", cls.chat_model),
                    embedding_model=os.getenv("COMPASS_EMBEDDING_MODEL", cls.embedding_model),
                    judge_model=os.getenv("COMPASS_JUDGE_MODEL", cls.judge_model),
-                   remote_tracing=os.getenv("COMPASS_REMOTE_TRACING", "false").lower() == "true")
+                   remote_tracing=os.getenv("COMPASS_REMOTE_TRACING", "false").lower() == "true",
+                   auth_mode=os.getenv("COMPASS_AUTH_MODE", "demo"))

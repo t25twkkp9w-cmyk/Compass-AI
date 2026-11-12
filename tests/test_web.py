@@ -7,7 +7,7 @@ import webapp
 
 @pytest.fixture
 def client(tmp_path,monkeypatch):
-    monkeypatch.setattr(webapp,'settings',replace(webapp.settings,mode='local',remote_tracing=False,database_url=f"sqlite:///{tmp_path/'web.db'}",runtime_directory=str(tmp_path/'vectors')))
+    monkeypatch.setattr(webapp,'settings',replace(webapp.settings,mode='local',remote_tracing=False,auth_mode='demo',database_url=f"sqlite:///{tmp_path/'web.db'}",runtime_directory=str(tmp_path/'vectors')))
     with TestClient(webapp.app) as client:yield client
 
 def test_reference_shell_has_exact_css_and_top_right_persona(client):

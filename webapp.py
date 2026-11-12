@@ -7,8 +7,8 @@ from pathlib import Path
 from typing import Any
 import uuid
 
-from fastapi import FastAPI, HTTPException
-from fastapi.responses import FileResponse
+from fastapi import FastAPI, HTTPException, Request
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel, Field
 from compass.settings import Settings
@@ -18,6 +18,7 @@ from compass.guidance import GuidanceService
 from compass.intake import IntakeService
 from compass.evaluations import evaluate,load_dataset
 from compass.schemas import DomainError
+from compass.assurance import token_actor, screen_payload
 
 ROOT=Path(__file__).parent
 settings=Settings.from_env()
@@ -42,6 +43,38 @@ def principal(actor_id):
     try:return repo.principal(actor_id)
     except DomainError:raise HTTPException(404,'Unknown demo persona.')
 
+def authenticated_actor(request, claimed=None):
+    if settings.auth_mode == "demo":return claimed or "ACT-001"
+    if settings.auth_mode != "token":raise HTTPException(503,"Invalid authentication mode.")
+    header=request.headers.get("authorization", "")
+    token=header[7:] if header.startswith("Bearer ") else request.cookies.get("compass_session", "")
+    actor=token_actor(token)
+    if not actor:raise HTTPException(401,"Authentication required.")
+    if claimed and claimed != actor:raise HTTPException(403,"Requested identity does not match authenticated identity.")
+    return actor
+
+class Login(BaseModel):
+    token:str=Field(min_length=32,max_length=512)
+
+@app.post("/api/session")
+def login(credentials:Login, request:Request):
+    if settings.auth_mode != "token":raise HTTPException(400,"Token sign-in is not enabled.")
+    actor=token_actor(credentials.token)
+    if not actor:raise HTTPException(401,"Invalid credential.")
+    principal(actor)
+    response=JSONResponse({"actor_id":actor})
+    response.set_cookie("compass_session",credentials.token,httponly=True,samesite="strict",secure=request.url.scheme=="https",max_age=3600)
+    response.headers["Cache-Control"]="no-store"
+    return response
+
+@app.get("/api/session")
+def session(request:Request):
+    return {"actor_id":authenticated_actor(request),"auth_mode":settings.auth_mode}
+
+@app.delete("/api/session")
+def logout():
+    response=JSONResponse({"signed_out":True});response.delete_cookie("compass_session");return response
+
 def bootstrap(actor_id):
     p=principal(actor_id);requests=repo.requests(p)
     cases={}
@@ -50,7 +83,7 @@ def bootstrap(actor_id):
         cases[rid]={'request':r,'reviews':list(repo.latest_reviews(p,rid).values()),'review_assignments':repo.review_assignments(r['required_review_domains'])}
         for kind in ['conditions','evidence','decisions','snapshots','releases']:cases[rid][kind]=repo.case_records(p,rid,kind)
         cases[rid]['events']=repo.audit_events(p,rid)
-    return {'actor':p.model_dump(),'actors':repo.actors(),'cases':cases,'tools':repo.catalog('tools'),'models':repo.catalog('models'),'deployments':repo.catalog('deployments'),
+    return {'actor':p.model_dump(),'actors':repo.actors() if settings.auth_mode=='demo' else [p.model_dump()], 'auth_mode':settings.auth_mode,'cases':cases,'tools':repo.catalog('tools'),'models':repo.catalog('models'),'deployments':repo.catalog('deployments'),
         'sources':[{k:s[k] for k in ['number','name','route']} for s in corpus.sources],
         'knowledge':{str(s['number']):Path(s['path']).read_text() for s in corpus.sources if s['number'] in KNOWLEDGE},
         'mode':settings.mode,'manifest':corpus.manifest,'section_count':len(corpus.sections),'eval_cases':[{k:c[k] for k in ['case_id','split','category','question','expected_route']} for c in load_dataset(settings)],
@@ -61,10 +94,12 @@ def index():return FileResponse(ROOT/'frontend'/'index.html')
 @app.get('/health')
 def health():return {'status':'ok','service_ready':service is not None}
 @app.get('/api/bootstrap')
-def get_bootstrap(actor_id:str='ACT-001'):return bootstrap(actor_id)
+def get_bootstrap(request:Request,actor_id:str|None=None):
+    result=bootstrap(authenticated_actor(request,actor_id))
+    return screen_payload(result)[0]
 @app.post('/api/action')
-def action(command:Action):
-    p=principal(command.actor_id);d=command.data;t=command.type;result=None
+def action(command:Action, request:Request):
+    p=principal(authenticated_actor(request,command.actor_id));d=command.data;t=command.type;result=None
     try:
         if t=='ask':
             result=service.ask(str(d.get('question','')),p,d.get('context',{}));repo.save_guidance(p,result)
@@ -86,5 +121,5 @@ def action(command:Action):
             elif t=='verify':repo.verify(*args,d['condition_id'],bool(d['accepted']),d['rationale'],key)
             elif t=='release':repo.clear_release(*args,d['rationale'],key)
         else:raise DomainError('Unknown action.')
-        return {'result':result,'workspace':bootstrap(p.actor_id)}
+        return screen_payload({'result':result,'workspace':bootstrap(p.actor_id)})[0]
     except (DomainError,ValueError,KeyError,UnicodeError) as exc:raise HTTPException(400,str(exc))

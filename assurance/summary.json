@@ -1,0 +1,18 @@
+{
+  "baseline": {
+    "PASS": 22,
+    "FAIL": 7,
+    "WARN": 1
+  },
+  "defended": {
+    "PASS": 29,
+    "WARN": 1
+  },
+  "scope": {
+    "adversarial_cases": 24,
+    "legitimate_cases": 6,
+    "baseline_commit": "45c5e162d494a025b0414f8f07e69fd9b39531d6",
+    "repeat_policy": "One corrected baseline run and one defended run. Initial run retained; CR02 identity corrected before comparison. No statistical robustness claim."
+  },
+  "defended_code_sha256": "6e946418d7468dc4050d9d86a8076f1ae1a0838d8ca6585fac1cfe1d3352615b"
+}

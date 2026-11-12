@@ -36,3 +36,15 @@ The demo persona selector uses synthetic identities. Human reviewers retain auth
 The checked-in development evaluation is from local evidence mode. Live generation and citation-reference checks passed a smoke test. Semantic faithfulness and live p95 latency remain to be measured.
 
 The earlier Streamlit interface is available through `./run.sh`.
+
+## Week 6 AI Compass Assurance
+
+The local Week 6 extension adds three defenses: retrieved-evidence quarantine, token-bound API identities, and complete-response sensitive-output screening. See `assurance/ASSESSMENT-REPORT.html` for the executed 30-case baseline and retest, limitations, and attack-to-defense mapping.
+
+Protected demonstration mode requires `COMPASS_AUTH_MODE=token` and `COMPASS_TEST_TOKENS`, a private JSON mapping of random credentials of at least 32 characters to fixed synthetic actor IDs. Configure these in ignored `.env`. Use the sign-in form; the credential is stored in an HttpOnly SameSite cookie. Use HTTPS outside localhost. An authorized principal still needs case assignment and workflow permissions. Missing/invalid credentials fail closed. `COMPASS_AUTH_MODE=demo` retains the original explicit persona demonstration; it is not authenticated access. This is a controlled demo credential mechanism, not enterprise SSO.
+
+Run `python -m pytest -q` for regression and defense tests. With a local-mode protected server on port 8601 and locally configured test credentials, `node tests/assurance-ui.test.cjs` exercises browser DOM sign-in, identity binding, guidance, and sign-out. Install package.json development dependencies first.
+
+`python assurance/run_assessment.py --phase defended` runs the live-model test register and overwrites the defended result file. Preserve evidence before deliberate reruns. Run the baseline only from original commit `45c5e162d494a025b0414f8f07e69fd9b39531d6` with the runner copied into that checkout. The phase flag is an evidence label, not a defense toggle. All private configurations and runtime indexes are ignored by Git.
+
+Pattern-based injection and output checks have deliberately bounded coverage. They do not establish universal attack resistance, and output screening does not prevent sensitive inputs from reaching a model. Use synthetic sensitive fixtures only.
